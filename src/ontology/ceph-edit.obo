@@ -1,7 +1,4 @@
 format-version: 1.2
-date: 30:01:2011 20:31
-saved-by: cjm
-auto-generated-by: OBO-Edit 2.1-beta9
 synonymtypedef: octopoda "term used in octopoda"
 synonymtypedef: squid "term used in squid"
 synonymtypedef: PLURAL "plural term"
@@ -100,12 +97,12 @@ is_a: CEPH:0000015 ! arm
 is_a: UBERON:0008811 {source="Wikipedia"} ! intromittent organ
 xref: http://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Hectocotylized_arm_of_a_squid.jpg/189px-Hectocotylized_arm_of_a_squid.jpg
 
-
 [Term]
 id: CEPH:0000018
 name: armature of the arms
 def: "The grappling structures on the oral surfaces the arms and tentacles, including both suckers and hooks. " [http://tolweb.org/accessory/Armature_of_Cephalopod_Arms?acc_id=2018]
 is_a: UBERON:0000061 ! anatomical structure
+relationship: part_of UBERON:0000026 ! appendage
 
 [Term]
 id: CEPH:0000019
