@@ -208,15 +208,15 @@ relationship: adjacent_to CEPH:0000029 ! brachial crown
 
 [Term]
 id: CEPH:0000035
-name: brain
+name: cephalopod brain
 def: "Medial portion of the central nervous system. It includes the subesophageal and supraesophageal masses but generally does not include the large optic lobes." [http://tolweb.org/accessory/Cephalopod_Brain_Terminology?acc_id=1944]
-is_a: UBERON:0000061 ! anatomical structure
+is_a: UBERON:0000955 ! brain
 
 [Term]
 id: CEPH:0000036
 name: brooding
 def: "Incubation of eggs by the parent. A characteristic feature of incirrate octopods but also found in some squid (e.g., Gonatidae)." [http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587]
-is_a: UBERON:0000061 ! anatomical structure
+is_a: CEPH:0000300 ! cephalopod trait
 
 [Term]
 id: CEPH:0000037
@@ -461,7 +461,7 @@ is_a: UBERON:0000061 ! anatomical structure
 [Term]
 id: CEPH:0000082
 name: cuttlebone
-def: "Predominately calcareous internal shell of sepiids (cuttlefish). It is composed of many chambers and functions primarily as a buoyancy organ. The cuttlebone is homologous with the phragmocone of <strong>Spirula</strong>, <strong>Nautilus</strong> and many fossil cephalopods.        " [http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587]
+def: "Predominately calcareous internal shell of sepiids (cuttlefish). It is composed of many chambers and functions primarily as a buoyancy organ. The cuttlebone is homologous with the phragmocone of <strong>Spirula</strong>, <strong>Nautilus</strong> and many fossil cephalopods." [http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587]
 is_a: UBERON:0000061 ! anatomical structure
 
 [Term]
@@ -1024,10 +1024,11 @@ is_a: UBERON:0000061 ! anatomical structure
 
 [Term]
 id: CEPH:0000184
-name: olfactory organ
+name: cephalopod olfactory organ
 def: "A chemosensory organ present on the head or neck in all coleoid cephalopods. The olfactory organ is thought to be the homologue of the rhinophore of <strong>Nautilus</strong>." [http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587]
-comment: TODO - sensory organs
-is_a: UBERON:0000061 ! anatomical structure
+synonym: "rhinophore" RELATED []
+comment: TODO - sensory organs. TODO - part_of
+is_a: UBERON:0002268 ! olfactory organ
 
 [Term]
 id: CEPH:0000185
@@ -1036,8 +1037,8 @@ def: "The progressively descent into a deeper-water habitat as a cephalopod grow
 is_a: CEPH:0000300 ! cephalopod trait
 
 [Term]
-id: CEPH:0000187 ! optic lobes of brain
-name: optic lobes of brain
+id: CEPH:0000187 ! optic lobe of brain
+name: optic lobe of brain
 def: "Large lobes of the brain associated with the eyes. In octopods and some squids the optic lobes may be separated from the rest of the brain by an optic stalk of varying length. In <strong>Octopus</strong> the optic lobes contain 92 million cells compared with only 42 million in the main central mass of the brain (J. Young, 1963)." [http://tolweb.org/accessory/Cephalopod_Brain_Terminology?acc_id=1944]
 comment: editor note: check if this is part of the brain
 is_a: CEPH:0000294 ! lobe of nervous system
@@ -1358,9 +1359,9 @@ is_a: UBERON:0000045 ! ganglion
 
 [Term]
 id: CEPH:0000244
-name: stomach
+name: cephalopod stomach
 def: "A muscular organ of the digestive system where primary digestion occurs. The stomach is generally lined with cuticular ridges to aid in grinding food, and is supplied with digestive enzymes from the digestive gland. The stomach may be greatly expandable in size and serve as a storage area until food can be fully processed." [http://tolweb.org/accessory/Cephalopod_Digestive_System?acc_id=1993]
-is_a: UBERON:0000062 ! organ
+is_a: UBERON:0000945 ! stomach
 relationship: part_of UBERON:0001007 ! digestive system
 
 [Term]
@@ -1516,23 +1517,26 @@ id: CEPH:0000267
 name: trabeculae
 def: "Muscular cones or flaps that support the protective membranes on the arms and tentacular clubs in decapodiforms. These are thought to be homologous with the cirri of the octopodiformes." [http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587]
 is_a: UBERON:0000061 ! anatomical structure
+relationship: part_of UBERON:0000026 ! appendage
 
 [Term]
 id: CEPH:0000268
 name: tragus
 def: "Particular inward projecting knob in the funnel locking-apparatus of some squids. It is the knob found on the medial surface of the central depression." [http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587]
 is_a: UBERON:0000061 ! anatomical structure
+relationship: part_of CEPH:0000118 ! funnel locking-apparatus
 
 [Term]
 id: CEPH:0000269
 name: truncate teeth
 def: "Teeth on the inner horny of rings of decapodiform suckers that do not terminate in a point but rather a broad, flat tip." [http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587]
 is_a: UBERON:0000061 ! anatomical structure
+relationship: part_of CEPH:0000136 ! horny rings of suckers
 
 [Term]
 id: CEPH:0000270
 name: cephalopod tubercule
-def: "Structures with one or more cusps just beneath the surface epithelium. Tubercules may be cartilagenous, fibrous or of other structure and may be confined to the integument or extend deeper.        " [http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587]
+def: "Structures with one or more cusps just beneath the surface epithelium. Tubercules may be cartilagenous, fibrous or of other structure and may be confined to the integument or extend deeper." [http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587]
 is_a: UBERON:0005813 ! tubercle
 
 [Term]
@@ -1607,6 +1611,7 @@ relationship: part_of CEPH:0000280 ! web
 id: CEPH:0000282
 name: white body
 def: "Amorphous organ near the optic lobes that forms white blood cells." [http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587]
+comment: TODO: immune system
 is_a: UBERON:0000061 ! anatomical structure
 
 [Term]
@@ -1619,6 +1624,7 @@ is_a: UBERON:0000061 ! anatomical structure
 id: CEPH:0000284
 name: leucophore
 def: "Reflective cells in the skin of some cephalopods containing numerous refractive granules on stalks that together produce a scattered reflection of ambient light." [http://tolweb.org/notes/?note_id=2646]
+comment: TODO: cells
 is_a: UBERON:0000061 ! anatomical structure
 
 [Term]
@@ -2158,16 +2164,6 @@ def: "organ that detects light" [http://en.wikipedia.org/wiki/Eye, UBERON:cjm, W
 synonym: "visual apparatus" RELATED []
 is_a: UBERON:0000020 ! sense organ
 relationship: part_of UBERON:0002104 ! visual system
-
-[Term]
-id: UBERON:0000989
-name: penis
-def: "The penis (plural penises, penes) is an external sexual organ of certain biologically male organisms, in both vertebrates and invertebrates. The penis is a reproductive organ, technically an intromittent organ, and for placental mammals, additionally serves as the external organ of urination. The penis is generally found on mammals and reptiles. [WP,unvetted]." [Wikipedia:Penis]
-comment: This class was created automatically from a combination of ontologies
-synonym: "phallus" RELATED []
-is_a: UBERON:0003133 ! reproductive organ
-is_a: UBERON:0003135 ! male reproductive organ
-relationship: part_of UBERON:0000079 ! male reproductive system
 
 [Term]
 id: UBERON:0000990
