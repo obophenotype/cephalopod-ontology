@@ -197,7 +197,8 @@ is_a: UBERON:0002530 ! gland
 id: CEPH:0000033
 name: brachial photophore
 def: "Photophores located on the arms." [http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587]
-is_a: UBERON:0000061 ! anatomical structure
+is_a: CEPH:0000198 ! photophore
+property_value: external_definition "photophore at base of gill[http://tolweb.org/accessory/Cephalopod_Photophore_Terminology?acc_id=2015]l" xsd:string {source="http://tolweb.org/accessory/Cephalopod_Photophore_Terminology?acc_id=2015"}
 
 [Term]
 id: CEPH:0000034
@@ -1094,9 +1095,8 @@ intersection_of: capable_of GO:0008218 ! bioluminescence
 
 [Term]
 id: CEPH:0000290
-name: brachial photophore
-def: "photophore at base of gill" [http://tolweb.org/accessory/Cephalopod_Photophore_Terminology?acc_id=2015]
-is_a: CEPH:0000198 ! photophore
+name: obsolete brachial photophore
+is_obsolete: true
 
 [Term]
 id: CEPH:0000304
