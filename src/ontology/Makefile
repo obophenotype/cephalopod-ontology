@@ -9,11 +9,9 @@ release: ceph.obo diff
 
 # all release files are derived from the editors version.
 # we use the default Oort setup (hermit as reasoner)
-ceph.obo: ceph-edit.obo
-	ontology-release-runner $< --allow-overwrite --asserted --simple
+ceph.obo: ceph-edit.owl
+	ontology-release-runner --catalog-xml catalog-v001.xml $< --allow-overwrite --asserted --simple
 
-obo2owl:
-	obolib-owl2obo ceph-edit.owl -o ceph-edit.obo
 
 # ----------------------------------------
 # Diffs
