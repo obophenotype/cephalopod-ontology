@@ -7,6 +7,8 @@ The ontology is available from
 
   http://purl.obolibrary.org/obo/ceph.owl
 
+You can find the source files in the [src/ontology/](https://github.com/obophenotype/cephalopod-ontology/tree/master/src/ontology) directory.
+
 Adopt a cephalopod ontology!
 ----------------------------
 
