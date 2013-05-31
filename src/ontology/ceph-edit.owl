@@ -483,6 +483,18 @@
     <owl:Class rdf:about="&obo;CEPH_0000004">
         <rdfs:label rdf:datatype="&xsd;string">accessory gland complex</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0002530"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002160"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_61743"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000063"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">CEPH:0000004</oboInOwl:id>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The glandular complex in cirrates that forms sperm packets and is a counterpart of the spermatophore-forming complex of other cephalopods. </obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ceph</oboInOwl:hasOBONamespace>
@@ -913,16 +925,16 @@
         <rdfs:seeAlso>http://en.wikipedia.org/wiki/Branchial_heart</rdfs:seeAlso>
     </owl:Class>
     <owl:Axiom>
-        <dc:source rdf:datatype="&xsd;anyURI">http://en.wikipedia.org/wiki/Branchial_heart</dc:source>
-        <owl:annotatedTarget>Branchial hearts appear to be involved in hemocyanin synthesis</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;CEPH_0000032"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">A pulsating gland at the base of the gill and through which the afferent blood to the gills flows. It contributes to the blood flow through the gill but also is the site of hemocyanin (the blood respiratory pigment) synthesis. </owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;CEPH_0000032"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <dc:source rdf:datatype="&xsd;anyURI">http://en.wikipedia.org/wiki/Branchial_heart</dc:source>
+        <owl:annotatedTarget>Branchial hearts appear to be involved in hemocyanin synthesis</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;CEPH_0000032"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
     </owl:Axiom>
     
 
@@ -1036,14 +1048,14 @@
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000477"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;ceph#surrounded_by"/>
-                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000029"/>
+                <owl:onProperty rdf:resource="&obo;ceph#surrounds"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000166"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;ceph#surrounds"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000166"/>
+                <owl:onProperty rdf:resource="&obo;ceph#surrounded_by"/>
+                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000029"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">CEPH:0000038</oboInOwl:id>
@@ -1098,14 +1110,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;ceph#surrounds"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000165"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000033"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000033"/>
+                <owl:onProperty rdf:resource="&obo;ceph#surrounds"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000165"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">CEPH:0000040</oboInOwl:id>
@@ -1348,16 +1360,16 @@
         <rdfs:comment>The term &apos;carpus&apos; is most appropriate where the carpal locking-apparatus is separate from the manus (e.g., Onychoteuthis spp.).</rdfs:comment>
     </owl:Class>
     <owl:Axiom>
-        <dc:source rdf:datatype="&xsd;anyURI">http://tolweb.org/accessory/Cephalopod_Tentacle_Terminology?acc_id=1962</dc:source>
-        <owl:annotatedTarget>The term &apos;carpus&apos; is most appropriate where the carpal locking-apparatus is separate from the manus (e.g., Onychoteuthis spp.).</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;CEPH_0000053"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">The region of the tentacle that contains the carpal locking-apparatus </owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">http://tolweb.org/accessory/Cephalopod_Tentacle_Terminology?acc_id=1962</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;CEPH_0000053"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <dc:source rdf:datatype="&xsd;anyURI">http://tolweb.org/accessory/Cephalopod_Tentacle_Terminology?acc_id=1962</dc:source>
+        <owl:annotatedTarget>The term &apos;carpus&apos; is most appropriate where the carpal locking-apparatus is separate from the manus (e.g., Onychoteuthis spp.).</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;CEPH_0000053"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
     </owl:Axiom>
     
 
@@ -1668,14 +1680,14 @@
         <rdfs:label rdf:datatype="&xsd;string">conus field</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;ceph#continuous_with"/>
-                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000072"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000124"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000124"/>
+                <owl:onProperty rdf:resource="&obo;ceph#continuous_with"/>
+                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000072"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">CEPH:0000073</oboInOwl:id>
@@ -1758,14 +1770,14 @@
         <rdfs:label rdf:datatype="&xsd;string">crop</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001555"/>
+                <owl:onProperty rdf:resource="&obo;ceph#continuous_with"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001043"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;ceph#continuous_with"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001043"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001555"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">CEPH:0000078</oboInOwl:id>
@@ -1860,16 +1872,16 @@
         <oboInOwl:hasRelatedSynonym>sepion</oboInOwl:hasRelatedSynonym>
     </owl:Class>
     <owl:Axiom>
-        <dc:source rdf:datatype="&xsd;anyURI">http://www.sil.si.edu/smithsoniancontributions/zoology/pdf_hi/sctz-0513.pdf</dc:source>
-        <owl:annotatedTarget>A calcareous oblong supporting part of the mantle of cuttlefishes</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;CEPH_0000082"/>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Predominately calcareous internal shell of sepiids (cuttlefish). It is composed of many chambers and functions primarily as a buoyancy organ. The cuttlebone is homologous with the phragmocone of &lt;strong&gt;Spirula&lt;/strong&gt;, &lt;strong&gt;Nautilus&lt;/strong&gt; and many fossil cephalopods.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;CEPH_0000082"/>
         <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <dc:source rdf:datatype="&xsd;anyURI">http://www.sil.si.edu/smithsoniancontributions/zoology/pdf_hi/sctz-0513.pdf</dc:source>
+        <owl:annotatedTarget>A calcareous oblong supporting part of the mantle of cuttlefishes</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;CEPH_0000082"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
     
 
@@ -1988,14 +2000,14 @@
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000061"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0006799"/>
+                <owl:onProperty rdf:resource="&obo;ceph#continuous_with"/>
+                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000087"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;ceph#continuous_with"/>
-                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000087"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0006799"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2513,7 +2525,9 @@
         <oboInOwl:id rdf:datatype="&xsd;string">CEPH:0000116</oboInOwl:id>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The ventral, muscular tube through which water is expelled from the mantle cavity. The funnel is thought to have evolved from the molluscan foot.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ceph</oboInOwl:hasOBONamespace>
+        <rdfs:seeAlso rdf:datatype="&xsd;anyURI">http://en.wikipedia.org/wiki/Siphon_%28mollusc%29</rdfs:seeAlso>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">siphon</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>hyponome</oboInOwl:hasRelatedSynonym>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">The ventral, muscular tube through which water is expelled from the mantle cavity. The funnel is thought to have evolved from the molluscan foot.</owl:annotatedTarget>
@@ -2707,14 +2721,14 @@
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000475"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000059"/>
+                <owl:onProperty rdf:resource="&obo;CEPH_0001007"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0006612"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;CEPH_0001007"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0006612"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">CEPH:0000124</oboInOwl:id>
@@ -2726,6 +2740,12 @@
         <oboInOwl:hasRelatedSynonym>gladii</oboInOwl:hasRelatedSynonym>
     </owl:Class>
     <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">The chitinous remnant of the shell in many decapodiforms and &lt;strong&gt;Vampyroteuthis&lt;/strong&gt;. It is generally feather-shaped and lies in the dorsal mid-line of the body along the full length of the mantle. The gladius lies within the shell sac which secretes it.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">http://tolweb.org/accessory/Cephalopod_Gladius_Terminology?acc_id=1955</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;CEPH_0000124"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
         <dc:source rdf:datatype="&xsd;anyURI">http://www.sil.si.edu/smithsoniancontributions/zoology/pdf_hi/sctz-0513.pdf</dc:source>
         <owl:annotatedSource rdf:resource="&obo;CEPH_0000124"/>
         <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
@@ -2735,12 +2755,6 @@
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0006612"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">The chitinous remnant of the shell in many decapodiforms and &lt;strong&gt;Vampyroteuthis&lt;/strong&gt;. It is generally feather-shaped and lies in the dorsal mid-line of the body along the full length of the mantle. The gladius lies within the shell sac which secretes it.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">http://tolweb.org/accessory/Cephalopod_Gladius_Terminology?acc_id=1955</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="&obo;CEPH_0000124"/>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
     
 
@@ -2791,13 +2805,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;ceph#trait_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0006575"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000033"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;ceph#trait_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000033"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0006575"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">.</obo:IAO_0000115>
@@ -2904,14 +2918,14 @@
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000061"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000059"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000308"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000308"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">CEPH:0000134</oboInOwl:id>
@@ -3021,16 +3035,16 @@
         <rdfs:comment></rdfs:comment>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">The siphon of Cephalopoda</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">http://thinkexist.com/dictionary/meaning/infundibulum/</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="&obo;CEPH_0000138"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <dc:source rdf:datatype="&xsd;anyURI">http://www.sil.si.edu/smithsoniancontributions/zoology/pdf_hi/sctz-0513.pdf</dc:source>
         <owl:annotatedTarget>Exposed flat outer ring that forms the adhesive surface of the sucker</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;CEPH_0000138"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">The siphon of Cephalopoda</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">http://thinkexist.com/dictionary/meaning/infundibulum/</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;CEPH_0000138"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
     </owl:Axiom>
     
 
@@ -3472,20 +3486,21 @@
         <rdfs:label rdf:datatype="&xsd;string">Needham&apos;s sac</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000079"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000237"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000237"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000079"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">CEPH:0000171</oboInOwl:id>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">In males, the large storage sac for spermatophores that is an expanded region of the genital duct at the base of the penis.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ceph</oboInOwl:hasOBONamespace>
         <oboInOwl:hasExactSynonym>spermatophore sac</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>spermatophoric sac</oboInOwl:hasExactSynonym>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">In males, the large storage sac for spermatophores that is an expanded region of the genital duct at the base of the penis.</owl:annotatedTarget>
@@ -3527,7 +3542,7 @@
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0002530"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;ceph#continuous_with"/>
+                <owl:onProperty rdf:resource="&obo;RO_0001025"/>
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0006580"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3561,16 +3576,16 @@
         <obo:IAO_0000115>An oblong cartilaginou plate on the posterodorsal surface of the head of most squids and cuttlefishes that articulates with a complementary structure on the inner surface of the anterodorsal surface of  the mantle</obo:IAO_0000115>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">See nuchal locking-apparatus.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="&obo;CEPH_0000176"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <dc:source rdf:datatype="&xsd;anyURI">http://www.sil.si.edu/smithsoniancontributions/zoology/pdf_hi/sctz-0513.pdf</dc:source>
         <owl:annotatedTarget>An oblong cartilaginou plate on the posterodorsal surface of the head of most squids and cuttlefishes that articulates with a complementary structure on the inner surface of the anterodorsal surface of  the mantle</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;CEPH_0000176"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">See nuchal locking-apparatus.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;CEPH_0000176"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
     </owl:Axiom>
     
 
@@ -3850,24 +3865,25 @@
     <!-- http://purl.obolibrary.org/obo/CEPH_0000196 -->
 
     <owl:Class rdf:about="&obo;CEPH_0000196">
-        <rdfs:label rdf:datatype="&xsd;string">penis</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">cephalopod penis</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0008811"/>
         <oboInOwl:id rdf:datatype="&xsd;string">CEPH:0000196</oboInOwl:id>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The long, muscular end of the male gonoduct that assists in transfering spermatophores to the female. Apparently, in species with a hectocotylus, the penis transfers spermatophores to the hectocotylus which in turn transfers them to the female. In species without a hectocotylus, the penis is often greatly elongate, capable of extending beyond the mantle cavity and can, apparently, transfer spermatophores directly to the female.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ceph</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">terminal organ</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">terminal organ</oboInOwl:hasBroadSynonym>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">terminal organ</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;CEPH_0000196"/>
-        <oboInOwl:hasSynonymType rdf:resource="&obo;ceph#octopoda"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">The long, muscular end of the male gonoduct that assists in transfering spermatophores to the female. Apparently, in species with a hectocotylus, the penis transfers spermatophores to the hectocotylus which in turn transfers them to the female. In species without a hectocotylus, the penis is often greatly elongate, capable of extending beyond the mantle cavity and can, apparently, transfer spermatophores directly to the female.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;CEPH_0000196"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <dc:source rdf:datatype="&xsd;anyURI">http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587</dc:source>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">terminal organ</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;CEPH_0000196"/>
+        <oboInOwl:hasSynonymType rdf:resource="&obo;ceph#octopoda"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasBroadSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:source rdf:datatype="&xsd;string">Wikipedia</oboInOwl:source>
@@ -3990,16 +4006,16 @@
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">inferior frontal lobe</oboInOwl:hasExactSynonym>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">inferior frontal lobe</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;CEPH_0000204"/>
-        <oboInOwl:hasSynonymType rdf:resource="&obo;ceph#squid"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">A fused pair of lobes that are the anterior-most lobes of the supraesophageal mass of the brain of decapodiforms but is incorporated into the anterior portion of the supraesophageal mass behind the superior buccal lobes in most octopodiforms. </owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;CEPH_0000204"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">inferior frontal lobe</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;CEPH_0000204"/>
+        <oboInOwl:hasSynonymType rdf:resource="&obo;ceph#squid"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     
 
@@ -4662,14 +4678,14 @@
         <rdfs:subClassOf rdf:resource="&obo;CEPH_0000307"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;ceph#proximal_to"/>
-                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000291"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000256"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000256"/>
+                <owl:onProperty rdf:resource="&obo;ceph#proximal_to"/>
+                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000291"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">CEPH:0000240</oboInOwl:id>
@@ -4973,6 +4989,8 @@
         <oboInOwl:id rdf:datatype="&xsd;string">CEPH:0000255</oboInOwl:id>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Gas-filled structure found in the dorsal region of the pelagic octopods, &lt;em&gt;&lt;strong&gt;Ocythoe&lt;/strong&gt;,&lt;/em&gt; &lt;em&gt;&lt;strong&gt;Tremoctopus&lt;/strong&gt;&lt;/em&gt; and &lt;em&gt;&lt;strong&gt;Haliphron&lt;/strong&gt;&lt;/em&gt;.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ceph</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasBroadSynonym>swim bladder</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>gas bladder</oboInOwl:hasBroadSynonym>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Gas-filled structure found in the dorsal region of the pelagic octopods, &lt;em&gt;&lt;strong&gt;Ocythoe&lt;/strong&gt;,&lt;/em&gt; &lt;em&gt;&lt;strong&gt;Tremoctopus&lt;/strong&gt;&lt;/em&gt; and &lt;em&gt;&lt;strong&gt;Haliphron&lt;/strong&gt;&lt;/em&gt;.</owl:annotatedTarget>
@@ -4996,12 +5014,6 @@
         <obo:IAO_0000115>Elongate 4th circumoral appendage of cuttlefish and squids used to capture prey. Divided into proximal stalk and distal club.</obo:IAO_0000115>
     </owl:Class>
     <owl:Axiom>
-        <dc:source rdf:datatype="&xsd;anyURI">http://www.sil.si.edu/smithsoniancontributions/zoology/pdf_hi/sctz-0513.pdf</dc:source>
-        <owl:annotatedTarget>Elongate 4th circumoral appendage of cuttlefish and squids used to capture prey. Divided into proximal stalk and distal club.</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;CEPH_0000256"/>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Modified 4th pair of appendages in decapodiforms that are capable of considerable extension and contraction. Although the tentacles are derived evolutionarily from the 4th pair of arms, the term, &amp;quot;arms IV&amp;quot; is reserved for the subsequent arm pair, the ventral arms, which are evolutionarily the 5th pair of arms. Each tentacle consist of a proximal stalk usually devoid of suckers, and a distal club armed with suckers and occasionally hooks.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Cephalopod_limb</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">http://tolweb.org/accessory/Composite_Squid?acc_id=1936</oboInOwl:hasDbXref>
@@ -5010,13 +5022,19 @@
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Cephalopod_limb</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">limb</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">arm</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;CEPH_0000256"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
+        <dc:source rdf:datatype="&xsd;anyURI">http://www.sil.si.edu/smithsoniancontributions/zoology/pdf_hi/sctz-0513.pdf</dc:source>
+        <owl:annotatedTarget>Elongate 4th circumoral appendage of cuttlefish and squids used to capture prey. Divided into proximal stalk and distal club.</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;CEPH_0000256"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Cephalopod_limb</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">arm</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">limb</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;CEPH_0000256"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
@@ -5346,14 +5364,14 @@
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000061"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001007"/>
+                <owl:onProperty rdf:resource="&obo;ceph#adjacent_to"/>
+                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000046"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;ceph#adjacent_to"/>
-                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000046"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A concentration of digestive organs that sometimes includes reproductive organs as well. In cranchiid squids the visceral nucleus is especially distinct: the small, spindle-shaped digestive gland contains the ink sac and is adjacent to the stomach and caecum and associated structures (eg, digestive gland duct appendages, renal appendages). In most cephalopods the concentration of these structures is not so extensive but whenever a concentration exists, a visceral nucleus is present.</obo:IAO_0000115>
@@ -5363,16 +5381,16 @@
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">visceral hump</oboInOwl:hasExactSynonym>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001448</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">visceral hump</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;CEPH_0000276"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">A concentration of digestive organs that sometimes includes reproductive organs as well. In cranchiid squids the visceral nucleus is especially distinct: the small, spindle-shaped digestive gland contains the ink sac and is adjacent to the stomach and caecum and associated structures (eg, digestive gland duct appendages, renal appendages). In most cephalopods the concentration of these structures is not so extensive but whenever a concentration exists, a visceral nucleus is present.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;CEPH_0000276"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001448</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">visceral hump</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;CEPH_0000276"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     
 
@@ -5680,13 +5698,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;ceph#continuous_with"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000970"/>
+                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000187"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;ceph#continuous_with"/>
-                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000187"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000970"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">CEPH:0000292</oboInOwl:id>
@@ -5977,14 +5995,14 @@
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000038"/>
+                <owl:onProperty rdf:resource="&obo;ceph#continuous_with"/>
+                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;ceph#continuous_with"/>
-                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000040"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">buccal support</oboInOwl:hasRelatedSynonym>
@@ -6001,8 +6019,8 @@
         <obo:IAO_0000115>posteriorly blunt rather than broad body (mantle) common in larval cephalopods</obo:IAO_0000115>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget>posteriorly blunt rather than broad body (mantle) common in larval cephalopods</owl:annotatedTarget>
         <dc:source>http://www.sil.si.edu/smithsoniancontributions/zoology/pdf_hi/sctz-0513.pdf</dc:source>
+        <owl:annotatedTarget>posteriorly blunt rather than broad body (mantle) common in larval cephalopods</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;CEPH_0001001"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
@@ -6032,23 +6050,23 @@
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000477"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000061"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000468"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000468"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000061"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Collection of chromatophores that produces species-specific patterns in discrete regions</obo:IAO_0000115>
     </owl:Class>
     <owl:Axiom>
         <dc:source rdf:datatype="&xsd;anyURI">http://www.sil.si.edu/smithsoniancontributions/zoology/pdf_hi/sctz-0513.pdf</dc:source>
-        <owl:annotatedTarget xml:lang="en">chromatophore field</owl:annotatedTarget>
+        <owl:annotatedTarget>Collection of chromatophores that produces species-specific patterns in discrete regions</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;CEPH_0001003"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;label"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
     
 
@@ -6101,12 +6119,6 @@
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000475"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;CEPH_0001045"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;CEPH_0001007"/>
                 <owl:someValuesFrom rdf:resource="&obo;CEPH_0000072"/>
             </owl:Restriction>
@@ -6117,9 +6129,26 @@
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0006612"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;CEPH_0001045"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The phragmocone is the chambered portion of the shell of a cephalopod. It is divided by septa into camerae.</obo:IAO_0000115>
         <rdfs:comment>found in fossil teuthoids</rdfs:comment>
     </owl:Class>
+    <owl:Axiom>
+        <dc:source rdf:datatype="&xsd;anyURI">http://www.sil.si.edu/smithsoniancontributions/zoology/pdf_hi/sctz-0513.pdf</dc:source>
+        <owl:annotatedSource rdf:resource="&obo;CEPH_0001008"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;CEPH_0001007"/>
+                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000072"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+    </owl:Axiom>
     <owl:Axiom>
         <dc:source rdf:datatype="&xsd;anyURI">http://www.sil.si.edu/smithsoniancontributions/zoology/pdf_hi/sctz-0513.pdf</dc:source>
         <owl:annotatedTarget>found in fossil teuthoids</owl:annotatedTarget>
@@ -6131,17 +6160,6 @@
         <owl:annotatedTarget>The phragmocone is the chambered portion of the shell of a cephalopod. It is divided by septa into camerae.</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;CEPH_0001008"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <dc:source rdf:datatype="&xsd;anyURI">http://www.sil.si.edu/smithsoniancontributions/zoology/pdf_hi/sctz-0513.pdf</dc:source>
-        <owl:annotatedSource rdf:resource="&obo;CEPH_0001008"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;CEPH_0001007"/>
-                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000072"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
     </owl:Axiom>
     
 
@@ -6709,13 +6727,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000116"/>
+                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000118"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000118"/>
+                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000116"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -6730,13 +6748,28 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000118"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0006575"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0006575"/>
+                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000118"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEPH_0001053 -->
+
+    <owl:Class rdf:about="&obo;CEPH_0001053">
+        <rdfs:label xml:lang="en">spermatophore gland</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0002530"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000079"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -6967,6 +7000,12 @@
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">sensory system organ</oboInOwl:hasExactSynonym>
     </owl:Class>
     <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">sense organ system organ</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0000020"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">An organ that is part of a sense organ system.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Sense_organ</oboInOwl:hasDbXref>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
@@ -6980,25 +7019,7 @@
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">organ of sense organ system</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0000020"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">organ of sensory system</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0000020"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">sense organ system organ</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0000020"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">organ of sensory organ system</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000020"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -7009,16 +7030,28 @@
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000202</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Sinnesorgan</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0000020"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">organ of sense organ system</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0000020"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">WBbt:0006929</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">sensillum</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000020"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasNarrowSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000202</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Sinnesorgan</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">organ of sensory organ system</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000020"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     
 
@@ -7350,16 +7383,16 @@
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">part of nervous system</oboInOwl:hasExactSynonym>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">An anatomical structure that is part of a nervous system [Obol].</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0000073"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NIF_GrossAnatomy:birnlex_1157</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">part of nervous system</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000073"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">An anatomical structure that is part of a nervous system [Obol].</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0000073"/>
     </owl:Axiom>
     
 
@@ -7401,20 +7434,8 @@
         <obo:IAO_0000115 rdf:datatype="&xsd;string">the masculine organs of reproduction or generation, external or internal.</obo:IAO_0000115>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000082</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">male genital organ</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0000079"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">male organism reproductive system</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0000079"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">genitalia of male organism</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">reproductive system of male organism</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000079"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -7424,6 +7445,24 @@
         <owl:annotatedTarget rdf:datatype="&xsd;string">the masculine organs of reproduction or generation, external or internal.</owl:annotatedTarget>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000079"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000082</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">male genital organ</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0000079"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:45664</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">male genital system</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0000079"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000082</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">systema genitale masculinum</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0000079"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
@@ -7438,22 +7477,16 @@
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:45664</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">male genital system</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">male organism reproductive system</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000079"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">reproductive system of male organism</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">genitalia of male organism</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000079"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000082</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">systema genitale masculinum</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0000079"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
     
 
@@ -7592,17 +7625,17 @@
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">neural fiber bundle</oboInOwl:hasExactSynonym>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FBbt:00005099</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">nerve fiber bundle</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0000122"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">A fasciculated bundle of neuron projections (GO:0043005), largely or completely lacking synapses.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FBC:DOS</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FBbt:00005099</oboInOwl:hasDbXref>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000122"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FBbt:00005099</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">nerve fiber bundle</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0000122"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     
 
@@ -7633,13 +7666,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001555"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0005409"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0005409"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001555"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="&xsd;string">MA also has a class  MA:0001524 bowel, not clear how this is different</rdfs:comment>
@@ -7717,25 +7750,13 @@
     </owl:Class>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001090</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">vestibulum oris</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0000165"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001090</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">vestibule of mouth</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0000165"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001090</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">mouth cavity</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000165"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001090</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">oral vestibule</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">cavum oris</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000165"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
@@ -7747,7 +7768,13 @@
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001090</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">cavum oris</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">vestibulum oris</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0000165"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001090</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">rima oris</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000165"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
@@ -7759,7 +7786,13 @@
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001090</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">rima oris</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">vestibule of mouth</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0000165"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001090</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">oral vestibule</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000165"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
@@ -7774,13 +7807,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000165"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001004"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000165"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The opening of the head through which food passes into the body.</obo:IAO_0000115>
@@ -7796,10 +7829,10 @@
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">subdivision of mouth</oboInOwl:hasExactSynonym>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NLM:mouth</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">The opening of the head through which food passes into the body.</owl:annotatedTarget>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:59806</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">oral fissure</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000166"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:59806</oboInOwl:hasDbXref>
@@ -7808,10 +7841,10 @@
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:59806</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">oral fissure</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NLM:mouth</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">The opening of the head through which food passes into the body.</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000166"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     
 
@@ -7897,12 +7930,6 @@
     </owl:Class>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:10427</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Wall of trunk</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0000309"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:10427</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Trunk wall</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000309"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
@@ -7910,6 +7937,12 @@
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:10427</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">wall fo trunk</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0000309"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:10427</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Wall of trunk</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000309"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -7945,24 +7978,6 @@
         <rdfs:comment rdf:datatype="&xsd;string">we place the MA term musculature here, rather than under uberon:musculature, as this seems more appropriate given the structure of MA</rdfs:comment>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001485</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Muskelsystem</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0000383"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:72954</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">set of all muscles</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0000383"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:72954</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">muscular system</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0000383"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GOC:cjm</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">The sum of all muscles in the body. There is only one set of muscles per organism</owl:annotatedTarget>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
@@ -7971,6 +7986,24 @@
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:72954</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Set of muscles of body</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0000383"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001485</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Muskelsystem</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0000383"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:72954</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">muscular system</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0000383"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:72954</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">set of all muscles</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000383"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -7998,20 +8031,14 @@
         <rdfs:comment rdf:datatype="&xsd;string">this class was originally declared disjoint with anatomical structure, but there are some classes such as &apos;dentin&apos; that are both tissues and substances</rdfs:comment>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MA:0002450</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">body fluid or substance</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0000463"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:9669</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">body substance</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000463"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:9669</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">portion of body substance</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MA:0002450</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">body fluid or substance</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000463"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -8020,6 +8047,12 @@
         <owl:annotatedTarget rdf:datatype="&xsd;string">Material anatomical entity in a gaseous, liquid, semisolid or solid state; produced by anatomical structures or derived from inhaled and ingested substances that have been modified by anatomical structures as they pass through the body.</owl:annotatedTarget>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000463"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:9669</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">portion of body substance</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0000463"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     
 
@@ -8107,6 +8140,12 @@
         <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">system</oboInOwl:hasBroadSynonym>
     </owl:Class>
     <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GO:0048731</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">system</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0000467"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasBroadSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Anatomical group that is has as its parts distinct anatomical structures interconnected by anatomical structures at a lower level of granularity[CARO]. A group of organs that work together to perform a certain task [Wikipedia].</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CARO:0000011</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CARO:MAH</oboInOwl:hasDbXref>
@@ -8114,12 +8153,6 @@
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ZFIN:curator</oboInOwl:hasDbXref>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000467"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GO:0048731</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">system</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0000467"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasBroadSynonym"/>
     </owl:Axiom>
     
 
@@ -8148,14 +8181,6 @@
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Anatomical structure that is an individual member of a species and consists of more than one cell.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CARO:0000012</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CARO:MAH</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Multi-cellular_organism</oboInOwl:hasDbXref>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0000468"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001489</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Koerper</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000468"/>
@@ -8166,6 +8191,14 @@
         <owl:annotatedTarget rdf:datatype="&xsd;string">whole body</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000468"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Anatomical structure that is an individual member of a species and consists of more than one cell.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CARO:0000012</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CARO:MAH</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Multi-cellular_organism</oboInOwl:hasDbXref>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0000468"/>
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MA:0002405</oboInOwl:hasDbXref>
@@ -8219,8 +8252,8 @@
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MA:0000381</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">female reproductive tract</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000083</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">gynaecological tissue</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000474"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
@@ -8232,13 +8265,13 @@
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">reproductive system of female organism</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">female organism reproductive system</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000474"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">female organism reproductive system</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">genitalia of female organism</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000474"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -8250,13 +8283,13 @@
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">genitalia of female organism</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">reproductive system of female organism</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000474"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000083</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">gynaecological tissue</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MA:0000381</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">female reproductive tract</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000474"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
@@ -8464,16 +8497,16 @@
         <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">upper body</oboInOwl:hasRelatedSynonym>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Organismal subdivision of body that lies between the head and the abdomen [Wikipedia].</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Thorax</oboInOwl:hasDbXref>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0000915"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MA:0000022</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">thoracic segment of trunk</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000915"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Organismal subdivision of body that lies between the head and the abdomen [Wikipedia].</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Thorax</oboInOwl:hasDbXref>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0000915"/>
     </owl:Axiom>
     
 
@@ -8535,18 +8568,18 @@
         <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">ventriculus</oboInOwl:hasRelatedSynonym>
     </owl:Class>
     <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001307</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">gaster</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0000945"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FB:FBrf0007735</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Internal organ that is the dilated portion of the alimentary tract situated between the esophagus and the beginning of the duodenum. It produces gastric juices involved in the breakdown of food[XAO]. Organ with organ cavity which is continuous proximally with the esophagus and distally with the small intestine. Examples: There is only one stomach[FMA].</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OMD:stomach</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Stomach</oboInOwl:hasDbXref>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000945"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001307</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">gaster</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0000945"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
     
 
@@ -8579,13 +8612,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001017"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000033"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000033"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001017"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The brain is the center of the nervous system in all vertebrate, and most invertebrate, animals.[1] Some primitive animals such as jellyfish and starfish have a decentralized nervous system without a brain, while sponges lack any nervous system at all. In vertebrates, the brain is located in the head, protected by the skull and close to the primary sensory apparatus of vision, hearing, balance, taste, and smell[WP].</obo:IAO_0000115>
@@ -8597,6 +8630,12 @@
         <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">synganglion</oboInOwl:hasRelatedSynonym>
     </owl:Class>
     <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000142</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">encephalon</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0000955"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">The brain is the center of the nervous system in all vertebrate, and most invertebrate, animals.[1] Some primitive animals such as jellyfish and starfish have a decentralized nervous system without a brain, while sponges lack any nervous system at all. In vertebrates, the brain is located in the head, protected by the skull and close to the primary sensory apparatus of vision, hearing, balance, taste, and smell[WP].</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Brain</oboInOwl:hasDbXref>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
@@ -8605,12 +8644,6 @@
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ZFA:0000008</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">brain structure</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0000955"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000142</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">encephalon</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000955"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
@@ -8662,19 +8695,19 @@
     </owl:Class>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000081</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">animal reproductive system</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0000990"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000081</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">organa genitalia</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000990"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000081</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Geschlechtsorgan</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">animal reproductive system</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0000990"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000081</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">reproductive tissue</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000990"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
@@ -8686,7 +8719,7 @@
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000081</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">reproductive tissue</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Geschlechtsorgan</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000990"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
@@ -8702,13 +8735,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0002323"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000990"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000990"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0002323"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="&xsd;string">FMA xref is a &apos;general anatomical term&apos;</rdfs:comment>
@@ -8781,74 +8814,8 @@
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">reproductive system of female organism gonada</oboInOwl:hasExactSynonym>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Ovum-producing female reproductive organ.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Ovary</oboInOwl:hasDbXref>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0000992"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">gonad of female organism reproductive system</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0000992"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">ovaries</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0000992"/>
-        <oboInOwl:hasSynonymType rdf:resource="&obo;ceph#PLURAL"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">gonad of reproductive system of female organism</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0000992"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">gonad of female reproductive system</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0000992"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">gonada of female organism genitalia</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0000992"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">reproductive system of female organism gonad</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0000992"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">female organism reproductive system gonada</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0000992"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">genitalia of female organism gonad</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0000992"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">female reproductive system gonad</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0000992"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">genitalia of female organism gonada</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0000992"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">female reproductive system gonada</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000992"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -8866,21 +8833,20 @@
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">gonada of genitalia of female organism</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">reproductive system of female organism gonada</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000992"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">gonada of female organism reproductive system</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">gonad of female reproductive system</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000992"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GO:0061039</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">ovum-producing ovary</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">female reproductive system gonada</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000992"/>
-        <oboInOwl:hasSynonymType rdf:resource="&obo;ceph#SENSU"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -8891,13 +8857,25 @@
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">gonad of genitalia of female organism</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">gonada of genitalia of female organism</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0000992"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Ovum-producing female reproductive organ.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Ovary</oboInOwl:hasDbXref>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0000992"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">genitalia of female organism gonad</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000992"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">female organism genitalia gonad</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">genitalia of female organism gonada</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000992"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -8909,13 +8887,68 @@
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">reproductive system of female organism gonada</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">gonada of reproductive system of female organism</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000992"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">gonada of reproductive system of female organism</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">female organism genitalia gonad</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0000992"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">gonad of female organism reproductive system</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0000992"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GO:0061039</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">ovum-producing ovary</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0000992"/>
+        <oboInOwl:hasSynonymType rdf:resource="&obo;ceph#SENSU"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">ovaries</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0000992"/>
+        <oboInOwl:hasSynonymType rdf:resource="&obo;ceph#PLURAL"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">gonada of female organism genitalia</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0000992"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">gonad of reproductive system of female organism</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0000992"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">reproductive system of female organism gonad</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0000992"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">gonada of female organism reproductive system</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0000992"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">female reproductive system gonad</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0000992"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">gonad of genitalia of female organism</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000992"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -8949,6 +8982,12 @@
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Oviduct</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">passage from the ovaries to the outside of the body[Wikipedia:Oviduct].</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0000993"/>
+    </owl:Axiom>
+    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000980</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">salpinx</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000993"/>
@@ -8959,12 +8998,6 @@
         <owl:annotatedTarget rdf:datatype="&xsd;string">tuba uterinae</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000993"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Oviduct</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">passage from the ovaries to the outside of the body[Wikipedia:Oviduct].</owl:annotatedTarget>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0000993"/>
     </owl:Axiom>
     
 
@@ -8978,13 +9011,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000991"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000474"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000474"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000991"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="&xsd;string">This class was created automatically from a combination of ontologies</rdfs:comment>
@@ -8996,9 +9029,9 @@
         <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">spermatheca</oboInOwl:hasRelatedSynonym>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">spermatheca</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001273</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">receptaculum seminis</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000994"/>
-        <oboInOwl:hasSynonymType rdf:resource="&obo;ceph#PLURAL"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -9008,9 +9041,9 @@
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000994"/>
     </owl:Axiom>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001273</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">receptaculum seminis</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">spermatheca</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0000994"/>
+        <oboInOwl:hasSynonymType rdf:resource="&obo;ceph#PLURAL"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
     
@@ -9031,10 +9064,10 @@
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">respiratory system</oboInOwl:hasExactSynonym>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Functional system which consists of structures involved in respiration..</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Respiratory_system</oboInOwl:hasDbXref>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000203</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">apparatus respiratorius </owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0001004"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Atmungssystem</owl:annotatedTarget>
@@ -9043,10 +9076,10 @@
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000203</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">apparatus respiratorius </owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Functional system which consists of structures involved in respiration..</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Respiratory_system</oboInOwl:hasDbXref>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0001004"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
     
 
@@ -9103,13 +9136,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000383"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0002204"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0002204"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000383"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Anatomical system that allows the animal move, includes all muscles[WP].</obo:IAO_0000115>
@@ -9132,6 +9165,12 @@
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:32558</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">set of muscles</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0001015"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Anatomical system that allows the animal move, includes all muscles[WP].</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000887</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">WB:rynl</oboInOwl:hasDbXref>
@@ -9139,12 +9178,6 @@
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ZFIN:curator</oboInOwl:hasDbXref>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0001015"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:32558</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">set of muscles</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0001015"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     
 
@@ -9162,12 +9195,6 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">nerve net</oboInOwl:hasNarrowSynonym>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Nerve_net</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">nerve net</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0001016"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasNarrowSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001484</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Nervensystem</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0001016"/>
@@ -9184,6 +9211,12 @@
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0001016"/>
     </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Nerve_net</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">nerve net</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0001016"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasNarrowSynonym"/>
+    </owl:Axiom>
     
 
 
@@ -9194,13 +9227,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001016"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0005743"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0005743"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001016"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">CNS</oboInOwl:hasExactSynonym>
@@ -9213,13 +9246,13 @@
     </owl:Class>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:55675</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">cerebrospinal axis</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">neuraxis</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0001017"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:55675</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">neuraxis</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">cerebrospinal axis</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0001017"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -9362,7 +9395,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0002224"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -9374,7 +9407,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001007"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0002224"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Tube that connects the pharynx to the stomach.</obo:IAO_0000115>
@@ -9460,7 +9493,13 @@
     </owl:Class>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000166</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">blindgut</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">intestinum caecum</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0001153"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000166</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">blind intestine</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0001153"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
@@ -9478,13 +9517,7 @@
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000166</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">blind intestine</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0001153"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000166</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">intestinum caecum</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">blindgut</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0001153"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
@@ -9637,13 +9670,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000383"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001015"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000383"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Organ consisting of a tissue made up of various elongated cells that are specialized to contract and thus to produce movement and mechanical work[GO]. Nonparenchymatous organ that primarily consists of skeletal muscle tissue aggregated into macroscopic fasciculi by connective tissue; together with other muscles, it constitutes the muscular system. Examples: biceps, diaphragm, masseter, right third external intercostal muscle, external oblique, levator ani, serratus anterior[FMA].</obo:IAO_0000115>
@@ -9654,12 +9687,6 @@
         <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">somatic muscle</oboInOwl:hasRelatedSynonym>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001103</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">skeletal muscle system</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0001630"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GO:0007517</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Organ consisting of a tissue made up of various elongated cells that are specialized to contract and thus to produce movement and mechanical work[GO]. Nonparenchymatous organ that primarily consists of skeletal muscle tissue aggregated into macroscopic fasciculi by connective tissue; together with other muscles, it constitutes the muscular system. Examples: biceps, diaphragm, masseter, right third external intercostal muscle, external oblique, levator ani, serratus anterior[FMA].</owl:annotatedTarget>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
@@ -9668,6 +9695,12 @@
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001103</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">somatic muscle</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0001630"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001103</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">skeletal muscle system</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0001630"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
@@ -9728,17 +9761,17 @@
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ceph</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000368</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">auris</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0001690"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GO:0042471</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Sense organ in vertebrates that is specialized for the detection of sound, and the maintenance of balance. Includes the outer ear and middle ear, which collect and transmit sound waves; and the inner ear, which contains the organs of balance and (except in fish) hearing. Also includes the pinna, the visible part of the outer ear, present in some mammals.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Ear</oboInOwl:hasDbXref>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0001690"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000368</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">auris</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0001690"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
     
 
@@ -9764,18 +9797,18 @@
         <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">otocyst</oboInOwl:hasRelatedSynonym>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000630</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">auris interna</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0001846"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Complex labyrinthine structure that comprises sensory endorgans specialized for vestibular, auditory, and acoustico-vestibular sensation.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:16217737</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Internal_ear</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ZFIN:curator</oboInOwl:hasDbXref>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0001846"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000630</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">auris interna</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0001846"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
     
 
@@ -9824,15 +9857,15 @@
     </owl:Class>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001856</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">labyrinthus vestibularis</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0001862"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001856</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">The part of the membranous labyrinth that includes the utricle and saccule lodged within the vestibule and the semicircular ducts lodged eccentrically in the corresponding canals.</owl:annotatedTarget>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0001862"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001856</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">labyrinthus vestibularis</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0001862"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
     
 
@@ -9856,17 +9889,17 @@
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">vascular tree organ region</oboInOwl:hasExactSynonym>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:50722</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">vascular tree organ region</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0001981"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">A vessel through which blood circulates in the body.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001102</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Blood_vessel</oboInOwl:hasDbXref>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0001981"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:50722</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">vascular tree organ region</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0001981"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:50722</oboInOwl:hasDbXref>
@@ -9885,12 +9918,6 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001009"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0004535"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -9898,6 +9925,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0000062"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0002049</oboInOwl:id>
@@ -9959,18 +9992,18 @@
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">torso</oboInOwl:hasExactSynonym>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001493</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Rumpf</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0002100"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Subdivision of body proper, which consists of a maximal set of diverse subclasses of organ and organ part spatially associated with the ribcage, thoracic and lumbar vertebral column, sacrum and coccyx, it is partially surrounded by skin of trunk. Examples: There is only one trunk. // Organism subdivision that is the part of the body posterior to the head and anterior to the tail. // Organism subdivision which is the part of the body posterior to the head and anterior to the tail.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Torso</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ZFA:0001115</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ZFIN:curator</oboInOwl:hasDbXref>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0002100"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001493</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Rumpf</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0002100"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
     
 
@@ -10053,8 +10086,14 @@
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:74657</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">the integument</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0002199"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000634</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">tegument</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">dermal system</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0002199"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
@@ -10066,14 +10105,8 @@
         <owl:annotatedSource rdf:resource="&obo;UBERON_0002199"/>
     </owl:Axiom>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:74657</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">the integument</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0002199"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000634</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">dermal system</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">tegument</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0002199"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
@@ -10122,16 +10155,16 @@
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">space of thoracic compartment</oboInOwl:hasExactSynonym>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:7565</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">space of thoracic compartment</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0002224"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Body cavity subdivision which is enclosed by the thoracic wall and the diaphragm. Examples: There is only one thoracic cavity.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Thoracic_cavity</oboInOwl:hasDbXref>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0002224"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:7565</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">space of thoracic compartment</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0002224"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     
 
@@ -10162,7 +10195,7 @@
     </owl:Class>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001772</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">olfactory neuroepithelium</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">organum olfactorium</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0002268"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
@@ -10174,7 +10207,7 @@
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001772</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">organum olfactorium</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">olfactory neuroepithelium</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0002268"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
@@ -10198,16 +10231,16 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">ventral body cavity</oboInOwl:hasNarrowSynonym>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Body_cavity</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">fluid-filled space between epidermis and outer lining of gut cavity.</owl:annotatedTarget>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0002323"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:85006</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">space of body compartment</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0002323"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Body_cavity</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">fluid-filled space between epidermis and outer lining of gut cavity.</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0002323"/>
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001707</oboInOwl:hasDbXref>
@@ -10240,17 +10273,17 @@
     </owl:Class>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000421</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Bindegewebe</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0002384"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000421</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OMD:connective+tissue</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Tissue which consists of fibroblasts, osteocytes or chondrocytes and intercellular matrix produced by these cells. Examples: bone (tissue), dense regular elastic tissue, areolar tissue, neuroglia, adipose tissue. // Anatomical entity consisting of tissue that is rich in extracellular matrix (collagen, proteoglycan, etc.) and binds together and is the support of the various structures of the body.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Connective_tissue</oboInOwl:hasDbXref>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0002384"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000421</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Bindegewebe</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0002384"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
     
 
@@ -10267,16 +10300,16 @@
         <obo:IAO_0000115 rdf:datatype="&xsd;string">organ system that protects the body from damage, comprising the skin and its appendages (including hair, scales, and nails). The integumentary system has a variety of functions; it may serve to waterproof, cushion and protect the deeper tissues, excrete wastes, regulate temperature and is the location of receptors for pain, sensation, pressure and temperature. In humans the integumentary system additionally provides vitamin D synthesis[WP].</obo:IAO_0000115>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:72979</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">integumentary system</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0002416"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Integumentary_system</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">organ system that protects the body from damage, comprising the skin and its appendages (including hair, scales, and nails). The integumentary system has a variety of functions; it may serve to waterproof, cushion and protect the deeper tissues, excrete wastes, regulate temperature and is the location of receptors for pain, sensation, pressure and temperature. In humans the integumentary system additionally provides vitamin D synthesis[WP].</owl:annotatedTarget>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0002416"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:72979</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">integumentary system</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0002416"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     
 
@@ -10301,18 +10334,18 @@
         <rdfs:comment rdf:datatype="&xsd;string">see also FMA:71500 Set of cartilages, FMA:55107 Cartilage organ, FMA:12264 Articular cartilage. // elements made from cartilage, cartilage-like, or chondroid tissues evolved in invertebrates[H&amp;W]</rdfs:comment>
     </owl:Class>
     <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:37377</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">cartilage tissue</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0002418"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">A portion of connective tissue dominated by extracellular matrix containing collagen type II and large amounts of proteoglycan, particularly chondroitin sulfate[GO]. Regular connective tissue, which consists of chondrocytes and related cells, the intercellular matrix of which is chondrified. Examples: hyaline cartilage, fibrocartilage, elastic cartilage[FMA].  an avascular supporting and articular skeletal tissue. It also functions as the primary endoskeletal support in vertebrate embryos. Cartilage is deposited by and is composed of chondroblasts and chondrocytes separated by an extracellular matrix, which may or may not mineralize depending on cartilage type, age, or taxon[Hall and Witten].</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:37377</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GO:0051216</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Cartilage</oboInOwl:hasDbXref>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0002418"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:37377</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">cartilage tissue</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0002418"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     
 
@@ -10330,10 +10363,10 @@
         <rdfs:comment rdf:datatype="&xsd;string">none of the major model vertebrate ontologies have a class called gland. Is this class superfluous? Also GO says secretion by tissue.</rdfs:comment>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000522</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">glandula</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">A gland is an organ in an animal&apos;s body that synthesizes a substance for release such as hormones or breast milk, often into the bloodstream (endocrine gland) or into cavities inside the body or its outer surface (exocrine gland). A gland is an organ specialised for secretion[GO].</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Gland</oboInOwl:hasDbXref>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0002530"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000522</oboInOwl:hasDbXref>
@@ -10342,10 +10375,10 @@
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">A gland is an organ in an animal&apos;s body that synthesizes a substance for release such as hormones or breast milk, often into the bloodstream (endocrine gland) or into cavities inside the body or its outer surface (exocrine gland). A gland is an organ specialised for secretion[GO].</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Gland</oboInOwl:hasDbXref>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000522</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">glandula</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0002530"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
     
 
@@ -10401,20 +10434,14 @@
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">segment of brain</oboInOwl:hasExactSynonym>
     </owl:Class>
     <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">An anatomical structure that is part of a brain [Obol].</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">brain anatomical structure</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0002616"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NIF_GrossAnatomy:birnlex_1167</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">segment of brain</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0002616"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">anatomical structure of brain</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0002616"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -10425,20 +10452,26 @@
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">An anatomical structure that is part of a brain [Obol].</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0002616"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">brain biological structure</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0002616"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">anatomical structure of brain</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0002616"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:55676</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">neuraxis segment</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0002616"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">brain anatomical structure</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0002616"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -10457,17 +10490,17 @@
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">female human body</oboInOwl:hasExactSynonym>
     </owl:Class>
     <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:67812</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">female human body</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0003100"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CARO:0000028</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Gonochoristic organism that can produce female gametes. // Gonochoristic organism that can produce female gametes.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ZFIN:curator</oboInOwl:hasDbXref>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0003100"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:67812</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">female human body</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0003100"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     
 
@@ -10641,25 +10674,31 @@
     </owl:Class>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">sex organ of female organism</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0003134"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">female organism reproductive structure</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0003134"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">female organism sex organ</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">female organism reproductive organ</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0003134"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">reproductive structure of female organism</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">sex organ of female organism</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0003134"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">reproductive system organ of female organism</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0003134"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">female organism reproductive system organ</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0003134"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -10671,25 +10710,19 @@
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">reproductive system organ of female organism</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0003134"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">reproductive organ of female organism</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0003134"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">female organism reproductive system organ</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">reproductive structure of female organism</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0003134"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">female organism reproductive organ</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">female organism sex organ</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0003134"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -10741,43 +10774,7 @@
     </owl:Class>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">male organism reproductive structure</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0003135"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">male organism reproductive system organ</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0003135"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">reproductive structure of male organism</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0003135"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">male organism sex organ</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0003135"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">sex organ of male organism</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0003135"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">A male organ involved in reproduction</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UBERON:xp</oboInOwl:hasDbXref>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0003135"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">reproductive system organ of male organism</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0003135"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -10789,7 +10786,43 @@
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">sex organ of male organism</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0003135"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">male organism reproductive structure</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0003135"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">A male organ involved in reproduction</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UBERON:xp</oboInOwl:hasDbXref>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0003135"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">male organism reproductive organ</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0003135"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">reproductive system organ of male organism</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0003135"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">male organism reproductive system organ</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0003135"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">male organism sex organ</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0003135"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -10836,12 +10869,6 @@
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">gland of subdivision of mouth</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0003293"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">A gland that is part of a oral opening [Obol].</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
@@ -10849,13 +10876,25 @@
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">oral part of face gland</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">gland of subdivision of mouth</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0003293"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">gland of oral opening</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0003293"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">gland of oral part of face</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0003293"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">oral part of face gland</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0003293"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -10868,12 +10907,6 @@
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">oral region gland</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0003293"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">gland of oral part of face</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0003293"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -10961,13 +10994,7 @@
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">gland of lower gastrointestinal tract</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0003408"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">gut gland</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">lower gastrointestinal tract gland</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0003408"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -10979,13 +11006,19 @@
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">lower gastrointestinal tract gland</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">gut gland</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0003408"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">gland of digestive tract</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0003408"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBOL:automatic</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">gland of lower gastrointestinal tract</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0003408"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -11024,15 +11057,15 @@
     </owl:Class>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:9642</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">nervous tissue</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">nerve tissue</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0003714"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:9642</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">nerve tissue</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Portion of tissue which consists of neurons, neuroglia and vasculature. Examples: Neural tissue of brain, neural tissue of peripheral ganglion, neural tissue of nerve[FMA].</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0003714"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:9642</oboInOwl:hasDbXref>
@@ -11042,9 +11075,9 @@
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:9642</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Portion of tissue which consists of neurons, neuroglia and vasculature. Examples: Neural tissue of brain, neural tissue of peripheral ganglion, neural tissue of nerve[FMA].</owl:annotatedTarget>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">nervous tissue</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0003714"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     
 
@@ -11067,13 +11100,13 @@
     </owl:Class>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:86188</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">venous tree organ segment</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">segment of venous tree organ</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0003920"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:86188</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">segment of venous tree organ</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">venous tree organ segment</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0003920"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -11277,13 +11310,13 @@
     </owl:Class>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:71131</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">subdivision of alimentary system</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">alimentary system subdivision</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0004921"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:71131</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">alimentary system subdivision</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">subdivision of alimentary system</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0004921"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -11431,19 +11464,31 @@
     </owl:Class>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MA:0000323</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">alimentary tract</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">alimentary system</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0005409"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MA:0000323</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">alimentary system</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:71132</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">gastro-intestinal system</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0005409"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GAID:294</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">gastrointestinal (GI) tract</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0005409"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GAID:294</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">GI tract</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0005409"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MA:0000323</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">alimentary tract</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0005409"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
@@ -11455,19 +11500,7 @@
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:71132</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">gastro-intestinal system</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0005409"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:71132</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">gastrointestinal tract</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0005409"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GAID:294</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">GI tract</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0005409"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
@@ -11572,6 +11605,12 @@
         <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">pallium</oboInOwl:hasRelatedSynonym>
     </owl:Class>
     <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000825</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">mantle tissue</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0006575"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wipikedia:Mantle_(mollusc)</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">pallium</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0006575"/>
@@ -11583,12 +11622,6 @@
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wipikedia:Mantle_(mollusc)</oboInOwl:hasDbXref>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0006575"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000825</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">mantle tissue</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0006575"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
     
 
@@ -11672,16 +11705,16 @@
         <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">shell</oboInOwl:hasRelatedSynonym>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Exoskeleton or shell, including those of mollusks, turtles, insects and crustaceans.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Exoskeleton</oboInOwl:hasDbXref>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
-        <owl:annotatedSource rdf:resource="&obo;UBERON_0006611"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0004659</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">shell</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;UBERON_0006611"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Exoskeleton or shell, including those of mollusks, turtles, insects and crustaceans.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Exoskeleton</oboInOwl:hasDbXref>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="&obo;UBERON_0006611"/>
     </owl:Axiom>
     
 
@@ -11826,13 +11859,13 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://xmlns.com/foaf/0.1/depicts"/>
-                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000130"/>
+                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000153"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://xmlns.com/foaf/0.1/depicts"/>
-                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000153"/>
+                <owl:someValuesFrom rdf:resource="&obo;CEPH_0000130"/>
             </owl:Restriction>
         </rdf:type>
     </owl:NamedIndividual>

@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2013-05-27
+data-version: releases/2013-05-31
 import: http://purl.obolibrary.org/obo/ceph/taxonomy.owl
 import: http://purl.obolibrary.org/obo/ro.owl
 synonymtypedef: octopoda "term used in octopoda"
@@ -32,7 +32,11 @@ creation_date: 2011-01-30T08:21:37Z
 id: CEPH:0000004
 name: accessory gland complex
 def: "The glandular complex in cirrates that forms sperm packets and is a counterpart of the spermatophore-forming complex of other cephalopods. " [http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587]
+is_a: BFO:0000001
 is_a: UBERON:0002530 ! gland
+is_a: UBERON:0005156 ! reproductive structure
+relationship: part_of CEPH:0000063 ! cirrate male reproductive system
+relationship: RO:0002160 NCBITaxon:61743
 
 [Term]
 id: CEPH:0000005
@@ -649,10 +653,12 @@ is_obsolete: true
 id: CEPH:0000116
 name: funnel
 def: "The ventral, muscular tube through which water is expelled from the mantle cavity. The funnel is thought to have evolved from the molluscan foot." [http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587]
+synonym: "hyponome" RELATED []
 synonym: "siphon" EXACT []
 is_a: UBERON:0000025 ! tube
 relationship: continuous_with UBERON:0006580 ! mantle cavity
 relationship: has_part UBERON:0001630 ! muscle organ
+property_value: seeAlso http://en.wikipedia.org/wiki/Siphon_%28mollusc%29 xsd:anyURI
 
 [Term]
 id: CEPH:0000117
@@ -950,6 +956,7 @@ id: CEPH:0000171
 name: Needham's sac
 def: "In males, the large storage sac for spermatophores that is an expanded region of the genital duct at the base of the penis." [http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587]
 synonym: "spermatophore sac" EXACT []
+synonym: "spermatophoric sac" EXACT []
 relationship: has_part CEPH:0000237 ! spermatophore
 relationship: part_of UBERON:0000079 ! male reproductive system
 
@@ -965,7 +972,7 @@ id: CEPH:0000175
 name: nidamental gland
 def: "Large glandular structures found in decapodiforms and <strong>Nautilus</strong> that lie in and open directly into the mantle cavity. The glands are composed of numerous lamellae that are involved in secretion of egg cases or the jelly of egg masses." [http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587]
 is_a: UBERON:0002530 ! gland
-relationship: continuous_with UBERON:0006580 ! mantle cavity
+relationship: RO:0001025 UBERON:0006580 ! mantle cavity
 
 [Term]
 id: CEPH:0000176
@@ -1063,9 +1070,9 @@ is_a: UBERON:0000105 ! life cycle stage
 
 [Term]
 id: CEPH:0000196
-name: penis
+name: cephalopod penis
 def: "The long, muscular end of the male gonoduct that assists in transfering spermatophores to the female. Apparently, in species with a hectocotylus, the penis transfers spermatophores to the hectocotylus which in turn transfers them to the female. In species without a hectocotylus, the penis is often greatly elongate, capable of extending beyond the mantle cavity and can, apparently, transfer spermatophores directly to the female." [http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587]
-synonym: "terminal organ" EXACT octopoda []
+synonym: "terminal organ" BROAD octopoda [] {http://purl.org/dc/elements/1.1/source="http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587"}
 is_a: UBERON:0008811 {source="Wikipedia"} ! intromittent organ
 
 [Term]
@@ -1409,6 +1416,8 @@ relationship: dorsal_to UBERON:0001043 ! esophagus
 id: CEPH:0000255
 name: cephalopod swimbladder
 def: "Gas-filled structure found in the dorsal region of the pelagic octopods, <em><strong>Ocythoe</strong>,</em> <em><strong>Tremoctopus</strong></em> and <em><strong>Haliphron</strong></em>." [http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587]
+synonym: "gas bladder" BROAD []
+synonym: "swim bladder" BROAD []
 
 [Term]
 id: CEPH:0000256
@@ -1769,8 +1778,8 @@ is_a: CEPH:0000061 ! chromatophore
 
 [Term]
 id: CEPH:0001003
-name: chromatophore field {http://purl.org/dc/elements/1.1/source="http://www.sil.si.edu/smithsoniancontributions/zoology/pdf_hi/sctz-0513.pdf"}
-def: "Collection of chromatophores that produces species-specific patterns in discrete regions" []
+name: chromatophore field
+def: "Collection of chromatophores that produces species-specific patterns in discrete regions" [] {http://purl.org/dc/elements/1.1/source="http://www.sil.si.edu/smithsoniancontributions/zoology/pdf_hi/sctz-0513.pdf"}
 is_a: UBERON:0000477 ! anatomical cluster
 relationship: has_part CEPH:0000061 ! chromatophore
 relationship: part_of UBERON:0000468 ! multi-cellular organism
@@ -2055,6 +2064,13 @@ relationship: part_of CEPH:0000118 ! funnel-mantle locking-apparatus
 relationship: part_of UBERON:0006575 ! mantle
 
 [Term]
+id: CEPH:0001053
+name: spermatophore gland
+is_a: UBERON:0002530 ! gland
+is_a: UBERON:0005156 ! reproductive structure
+relationship: part_of UBERON:0000079 ! male reproductive system
+
+[Term]
 id: CL:0000000
 name: cell
 namespace: cell
@@ -2106,6 +2122,10 @@ is_a: GO:0040011 ! locomotion
 [Term]
 id: NCBITaxon:34572
 is_a: NCBITaxon:34571
+
+[Term]
+id: NCBITaxon:61743
+is_a: NCBITaxon:6638
 
 [Term]
 id: TEST:0000001
