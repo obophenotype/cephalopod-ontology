@@ -9,7 +9,7 @@ The ontology is available from
 
 You can find the source files in the [src/ontology/](https://github.com/obophenotype/cephalopod-ontology/tree/master/src/ontology) directory.
 
-Adopt a cephalopod ontology!
+Adopt a cephalopod (ontology)!
 ----------------------------
 
 This ontology was created from high level sources without the benefit
