@@ -14,6 +14,8 @@ This ontology was created from high level sources without the benefit
 of domain expertise. We are looking for people to adopt or contribute
 to this ontology!
 
+Email cjm AT berkeleybop DOT org, or obo-anatomy AT lists.sourceforge.net
+
 ## Browse the ontology
 
 Currently, in order to browse the ontology it's necessary to load the
