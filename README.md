@@ -1,12 +1,8 @@
 # cephalopod-ontology
 
 ```
-<コ:彡
-
-Ｃ:。ミ
+<コ:彡 An ontology of cephalopod anatomy and traits Ｃ:。ミ
 ```
-
-Ontology of cephalopod anatomy and traits
 
 The ontology is available from
 
