@@ -10,10 +10,16 @@ USECAT= --catalog-xml catalog-v001.xml
 build: ceph.obo minidiff
 release: ceph.obo diff
 
+ceph.owl: ceph-edit.owl
+	owltools --use-catalog $< --remove-axioms --assert-inferred-subclass-axioms $@
+
+ceph.obo: ceph.owl
+	owltools --use-catalog $< -o -f obo $@
+
 # all release files are derived from the editors version.
 # we use the default Oort setup (hermit as reasoner)
-ceph.obo: ceph-edit.owl
-	ontology-release-runner --catalog-xml catalog-v001.xml $< --allow-overwrite --asserted --simple
+#ceph.obo: ceph-edit.owl
+#	ontology-release-runner --catalog-xml catalog-v001.xml $< --allow-overwrite --asserted --simple
 
 # ----------------------------------------
 # Imports
