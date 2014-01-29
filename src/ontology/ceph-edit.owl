@@ -7,6 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://purl.obolibrary.org/obo/ceph.owl>
 Import(<http://purl.obolibrary.org/obo/ceph/taxonomy.owl>)
+Import(<http://purl.obolibrary.org/obo/ceph/imports/ro_import.owl>)
+Import(<http://purl.obolibrary.org/obo/ceph/imports/cl_import.owl>)
+Import(<http://purl.obolibrary.org/obo/ceph/imports/uberon_import.owl>)
 Annotation(<http://purl.org/dc/elements/1.1/source> "Young, Richard E., Michael Vecchione, and Katharina M. Mangold (1922-2003). 2012. Cephalopoda Cuvier 1797. Octopods, squids, nautiluses, etc.. Version 10 November 2012 (under construction). http://tolweb.org/Cephalopoda/19386/2012.11.10 in The Tree of Life Web Project, http://tolweb.org/")
 Annotation(<http://purl.org/dc/elements/1.1/source> "http://www.sil.si.edu/smithsoniancontributions/zoology/pdf_hi/sctz-0513.pdf"^^xsd:anyURI)
 Annotation(<http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion> "1.2"^^xsd:string)

@@ -1,7 +1,5 @@
 format-version: 1.2
 data-version: releases/2013-05-31
-import: http://purl.obolibrary.org/obo/ceph/taxonomy.owl
-import: http://purl.obolibrary.org/obo/ro.owl
 synonymtypedef: octopoda "term used in octopoda"
 synonymtypedef: PLURAL "plural term"
 synonymtypedef: SENSU "taxonomic disambiguation"
