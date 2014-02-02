@@ -53,3 +53,9 @@ diff: ceph.obo
 # TESTING: emailing self, will change to list
 minidiff: ceph.obo
 	cd diffs  && touch ceph-diff && rm ceph-*diff* && make TGTS='html txt' SRC=../ceph.obo && mail -s ceph-diffs cjmungall@lbl.gov < ceph-combined-diff.txt
+
+# ----------------------------------------
+# MARKDOWN EXPORT
+# ----------------------------------------
+markdown: ceph.owl
+	owltools $< --merge-imports-closure --ontology-to-markdown md
