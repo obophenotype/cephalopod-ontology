@@ -11,7 +11,7 @@ build: ceph.obo minidiff
 release: ceph.obo diff
 
 ceph.owl: ceph-edit.owl
-	owltools --use-catalog $< --remove-axioms --assert-inferred-subclass-axioms $@
+	owltools --use-catalog $< --remove-axioms --assert-inferred-subclass-axioms -o $@
 
 ceph.obo: ceph.owl
 	owltools --use-catalog $< -o -f obo $@
