@@ -27,9 +27,14 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_subclass
+ * *[has_related_synonym](../../ym/oboInOwl#hasRelatedSynonym.md)* = Dibranchiata
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Coleoidea
 
 ## Usage
 
+ * -
+ * [Coleoidea](../../NCBITaxon/06/NCBITaxon_6606.md) SubClassOf [Cephalopoda](../../NCBITaxon/05/NCBITaxon_6605.md)
+ * [Neocoleoidea](../../NCBITaxon/49/NCBITaxon_215449.md) SubClassOf [Coleoidea](../../NCBITaxon/06/NCBITaxon_6606.md)
 
 ## External Comments
 

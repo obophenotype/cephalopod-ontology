@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Metasepia pfefferi
 
 ## Usage
 
+ * -
+ * [Metasepia pfefferi](../../NCBITaxon/27/NCBITaxon_348827.md) SubClassOf [Metasepia](../../NCBITaxon/87/NCBITaxon_279087.md)
 
 ## External Comments
 

@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Onykia sp.
 
 ## Usage
 
+ * -
+ * [Onykia sp.](../../NCBITaxon/89/NCBITaxon_72289.md) SubClassOf [Onykia](../../NCBITaxon/88/NCBITaxon_72288.md)
 
 ## External Comments
 

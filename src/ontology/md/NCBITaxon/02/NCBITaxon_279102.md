@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Teuthowenia megalops
 
 ## Usage
 
+ * -
+ * [Teuthowenia megalops](../../NCBITaxon/02/NCBITaxon_279102.md) SubClassOf [Teuthowenia](../../NCBITaxon/01/NCBITaxon_279101.md)
 
 ## External Comments
 

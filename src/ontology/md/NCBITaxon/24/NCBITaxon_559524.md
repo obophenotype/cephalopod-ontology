@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Megalocranchia sp. ARL-2008
 
 ## Usage
 
+ * -
+ * [Megalocranchia sp. ARL-2008](../../NCBITaxon/24/NCBITaxon_559524.md) SubClassOf [Megalocranchia](../../NCBITaxon/99/NCBITaxon_279099.md)
 
 ## External Comments
 

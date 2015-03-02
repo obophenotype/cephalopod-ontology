@@ -27,9 +27,13 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[has_exact_synonym](../../ym/oboInOwl#hasExactSynonym.md)* = giant Australian cuttlefish
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Sepia apama
 
 ## Usage
 
+ * -
+ * [Sepia apama](../../NCBITaxon/19/NCBITaxon_212219.md) SubClassOf [Sepia](../../NCBITaxon/09/NCBITaxon_6609.md)
 
 ## External Comments
 

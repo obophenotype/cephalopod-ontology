@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Nototodarus sloanii
 
 ## Usage
 
+ * -
+ * [Nototodarus sloanii](../../NCBITaxon/40/NCBITaxon_215440.md) SubClassOf [Nototodarus](../../NCBITaxon/30/NCBITaxon_6630.md)
 
 ## External Comments
 

@@ -27,9 +27,13 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[has_related_synonym](../../ym/oboInOwl#hasRelatedSynonym.md)* = Amphioctopus fangsiao (d'Orbigny, 1841)
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Amphioctopus fangsiao
 
 ## Usage
 
+ * -
+ * [Amphioctopus fangsiao](../../NCBITaxon/17/NCBITaxon_515817.md) SubClassOf [Amphioctopus](../../NCBITaxon/95/NCBITaxon_505395.md)
 
 ## External Comments
 

@@ -28,9 +28,15 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_phylum
+ * *[has_exact_synonym](../../ym/oboInOwl#hasExactSynonym.md)* = molluscs
+ * *[has_exact_synonym](../../ym/oboInOwl#hasExactSynonym.md)* = mollusks
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Mollusca
 
 ## Usage
 
+ * -
+ * [Cephalopoda](../../NCBITaxon/05/NCBITaxon_6605.md) SubClassOf [Mollusca](../../NCBITaxon/47/NCBITaxon_6447.md)
+ * [Mollusca](../../NCBITaxon/47/NCBITaxon_6447.md) SubClassOf [Protostomia](../../NCBITaxon/17/NCBITaxon_33317.md)
 
 ## External Comments
 

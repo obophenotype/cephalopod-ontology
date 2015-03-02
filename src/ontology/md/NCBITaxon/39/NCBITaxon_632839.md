@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Sepiola sp. nov. DSJG-2009
 
 ## Usage
 
+ * -
+ * [Sepiola sp. nov. DSJG-2009](../../NCBITaxon/39/NCBITaxon_632839.md) SubClassOf [Sepiola](../../NCBITaxon/36/NCBITaxon_34536.md)
 
 ## External Comments
 

@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Cirrothauma murrayi
 
 ## Usage
 
+ * -
+ * [Cirrothauma murrayi](../../NCBITaxon/02/NCBITaxon_61702.md) SubClassOf [Cirrothauma](../../NCBITaxon/01/NCBITaxon_61701.md)
 
 ## External Comments
 

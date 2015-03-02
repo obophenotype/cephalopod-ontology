@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Pterygioteuthis microlampas
 
 ## Usage
 
+ * -
+ * [Pterygioteuthis microlampas](../../NCBITaxon/44/NCBITaxon_34544.md) SubClassOf [Pterygioteuthis](../../NCBITaxon/43/NCBITaxon_34543.md)
 
 ## External Comments
 

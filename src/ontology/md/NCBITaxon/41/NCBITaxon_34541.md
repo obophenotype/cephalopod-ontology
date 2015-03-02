@@ -27,9 +27,13 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[has_exact_synonym](../../ym/oboInOwl#hasExactSynonym.md)* = ram's horn squid
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Spirula spirula
 
 ## Usage
 
+ * -
+ * [Spirula spirula](../../NCBITaxon/41/NCBITaxon_34541.md) SubClassOf [Spirula](../../NCBITaxon/40/NCBITaxon_34540.md)
 
 ## External Comments
 

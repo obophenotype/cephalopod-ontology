@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Opisthoteuthis sp. 'Taiwan'
 
 ## Usage
 
+ * -
+ * [Opisthoteuthis sp. 'Taiwan'](../../NCBITaxon/42/NCBITaxon_167142.md) SubClassOf [Opisthoteuthis](../../NCBITaxon/59/NCBITaxon_102659.md)
 
 ## External Comments
 

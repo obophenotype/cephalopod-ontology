@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Teuthida sp. BOLD:BIN9416
 
 ## Usage
 
+ * -
+ * [Teuthida sp. BOLD:BIN9416](../../NCBITaxon/16/NCBITaxon_725816.md) SubClassOf [unclassified Teuthida](../../NCBITaxon/14/NCBITaxon_725814.md)
 
 ## External Comments
 

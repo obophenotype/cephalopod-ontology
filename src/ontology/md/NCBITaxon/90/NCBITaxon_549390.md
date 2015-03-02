@@ -27,9 +27,13 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[has_related_synonym](../../ym/oboInOwl#hasRelatedSynonym.md)* = Loligo africana
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Alloteuthis africana
 
 ## Usage
 
+ * -
+ * [Alloteuthis africana](../../NCBITaxon/90/NCBITaxon_549390.md) SubClassOf [Alloteuthis](../../NCBITaxon/58/NCBITaxon_552058.md)
 
 ## External Comments
 

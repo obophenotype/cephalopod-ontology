@@ -28,9 +28,14 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[has_exact_synonym](../../ym/oboInOwl#hasExactSynonym.md)* = common clubhook squid
+ * *[has_related_synonym](../../ym/oboInOwl#hasRelatedSynonym.md)* = Onychoteuthis banksii (Leach, 1817)
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Onychoteuthis banksii
 
 ## Usage
 
+ * -
+ * [Onychoteuthis banksii](../../NCBITaxon/96/NCBITaxon_392296.md) SubClassOf [Onychoteuthis](../../NCBITaxon/26/NCBITaxon_61726.md)
 
 ## External Comments
 

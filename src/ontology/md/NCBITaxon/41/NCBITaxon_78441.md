@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Rossia sp.
 
 ## Usage
 
+ * -
+ * [Rossia sp.](../../NCBITaxon/41/NCBITaxon_78441.md) SubClassOf [Rossia](../../NCBITaxon/32/NCBITaxon_34532.md)
 
 ## External Comments
 

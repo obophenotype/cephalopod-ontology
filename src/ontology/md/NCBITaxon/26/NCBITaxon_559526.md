@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Planctoteuthis sp. ARL-2008
 
 ## Usage
 
+ * -
+ * [Planctoteuthis sp. ARL-2008](../../NCBITaxon/26/NCBITaxon_559526.md) SubClassOf [Planctoteuthis](../../NCBITaxon/38/NCBITaxon_78438.md)
 
 ## External Comments
 

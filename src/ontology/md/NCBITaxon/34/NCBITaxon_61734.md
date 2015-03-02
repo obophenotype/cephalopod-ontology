@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Octopoteuthis nielseni
 
 ## Usage
 
+ * -
+ * [Octopoteuthis nielseni](../../NCBITaxon/34/NCBITaxon_61734.md) SubClassOf [Octopoteuthis](../../NCBITaxon/33/NCBITaxon_61733.md)
 
 ## External Comments
 

@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Loligo opalescens
 
 ## Usage
 
+ * -
+ * [Loligo opalescens](../../NCBITaxon/11/NCBITaxon_31211.md) SubClassOf [Loligo](../../NCBITaxon/16/NCBITaxon_6616.md)
 
 ## External Comments
 

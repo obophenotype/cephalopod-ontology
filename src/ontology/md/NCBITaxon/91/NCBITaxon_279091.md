@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Benthoctopus sp. JMS-2004
 
 ## Usage
 
+ * -
+ * [Benthoctopus sp. JMS-2004](../../NCBITaxon/91/NCBITaxon_279091.md) SubClassOf [Benthoctopus](../../NCBITaxon/56/NCBITaxon_102656.md)
 
 ## External Comments
 

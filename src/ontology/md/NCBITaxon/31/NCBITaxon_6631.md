@@ -27,9 +27,13 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[has_exact_synonym](../../ym/oboInOwl#hasExactSynonym.md)* = Gould's flying squid
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Nototodarus gouldi
 
 ## Usage
 
+ * -
+ * [Nototodarus gouldi](../../NCBITaxon/31/NCBITaxon_6631.md) SubClassOf [Nototodarus](../../NCBITaxon/30/NCBITaxon_6630.md)
 
 ## External Comments
 

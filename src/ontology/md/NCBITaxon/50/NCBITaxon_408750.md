@@ -25,9 +25,12 @@
 
 ## Other Annotations
 
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Benthoctopus normani 3 JMS-2006
 
 ## Usage
 
+ * -
+ * [Benthoctopus normani 3 JMS-2006](../../NCBITaxon/50/NCBITaxon_408750.md) SubClassOf [Benthoctopus normani](../../NCBITaxon/45/NCBITaxon_408745.md)
 
 ## External Comments
 

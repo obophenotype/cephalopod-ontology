@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_family
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Spirulirostridae
 
 ## Usage
 
+ * -
+ * [Spirulirostridae](../../NCBITaxon/97/NCBITaxon_551297.md) SubClassOf [Spirulina [NCBITaxon:551299]](../../NCBITaxon/99/NCBITaxon_551299.md)
 
 ## External Comments
 

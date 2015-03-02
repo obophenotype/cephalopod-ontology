@@ -25,9 +25,13 @@
 
 ## Other Annotations
 
+ * *[has_related_synonym](../../ym/oboInOwl#hasRelatedSynonym.md)* = biota
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = cellular organisms
 
 ## Usage
 
+ * -
+ * [Eukaryota](../../NCBITaxon/59/NCBITaxon_2759.md) SubClassOf [cellular organisms](../../NCBITaxon/67/NCBITaxon_131567.md)
 
 ## External Comments
 

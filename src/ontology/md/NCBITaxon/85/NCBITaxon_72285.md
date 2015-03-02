@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Onychoteuthis sp. B/C
 
 ## Usage
 
+ * -
+ * [Onychoteuthis sp. B/C](../../NCBITaxon/85/NCBITaxon_72285.md) SubClassOf [Onychoteuthis](../../NCBITaxon/26/NCBITaxon_61726.md)
 
 ## External Comments
 

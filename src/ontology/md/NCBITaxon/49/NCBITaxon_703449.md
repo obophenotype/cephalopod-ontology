@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Thaumoctopus mimicus
 
 ## Usage
 
+ * -
+ * [Thaumoctopus mimicus](../../NCBITaxon/49/NCBITaxon_703449.md) SubClassOf [Thaumoctopus](../../NCBITaxon/47/NCBITaxon_703447.md)
 
 ## External Comments
 

@@ -27,9 +27,13 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[has_exact_synonym](../../ym/oboInOwl#hasExactSynonym.md)* = common octopus
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Octopus vulgaris
 
 ## Usage
 
+ * -
+ * [Octopus vulgaris](../../NCBITaxon/45/NCBITaxon_6645.md) SubClassOf [Octopus](../../NCBITaxon/43/NCBITaxon_6643.md)
 
 ## External Comments
 

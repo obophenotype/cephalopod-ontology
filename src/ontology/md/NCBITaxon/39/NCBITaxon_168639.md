@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Amphitretus pelagicus
 
 ## Usage
 
+ * -
+ * [Amphitretus pelagicus](../../NCBITaxon/39/NCBITaxon_168639.md) SubClassOf [Amphitretus](../../NCBITaxon/38/NCBITaxon_168638.md)
 
 ## External Comments
 

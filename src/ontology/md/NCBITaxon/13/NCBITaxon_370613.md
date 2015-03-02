@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Illex cf. oxygonius DBC-2006
 
 ## Usage
 
+ * -
+ * [Illex cf. oxygonius DBC-2006](../../NCBITaxon/13/NCBITaxon_370613.md) SubClassOf [Illex](../../NCBITaxon/27/NCBITaxon_6627.md)
 
 ## External Comments
 

@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Grimpoteuthis sp. Discovery 133692b
 
 ## Usage
 
+ * -
+ * [Grimpoteuthis sp. Discovery 133692b](../../NCBITaxon/72/NCBITaxon_202572.md) SubClassOf [Grimpoteuthis](../../NCBITaxon/42/NCBITaxon_78442.md)
 
 ## External Comments
 

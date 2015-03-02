@@ -26,9 +26,14 @@
 
 ## Other Annotations
 
+ * *[has_related_synonym](../../ym/oboInOwl#hasRelatedSynonym.md)* = unclassified cephalopods
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = unclassified Cephalopoda
 
 ## Usage
 
+ * -
+ * [unclassified Cephalopoda](../../NCBITaxon/25/NCBITaxon_58125.md) SubClassOf [Cephalopoda](../../NCBITaxon/05/NCBITaxon_6605.md)
+ * [unidentified squid](../../NCBITaxon/99/NCBITaxon_36499.md) SubClassOf [unclassified Cephalopoda](../../NCBITaxon/25/NCBITaxon_58125.md)
 
 ## External Comments
 

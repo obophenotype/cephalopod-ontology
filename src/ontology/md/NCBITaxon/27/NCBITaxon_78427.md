@@ -28,9 +28,14 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[has_related_synonym](../../ym/oboInOwl#hasRelatedSynonym.md)* = Photololigo noctiluca
+ * *[has_related_synonym](../../ym/oboInOwl#hasRelatedSynonym.md)* = Uroteuthis (Aestuariolus) noctiluca
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Uroteuthis noctiluca
 
 ## Usage
 
+ * -
+ * [Uroteuthis noctiluca](../../NCBITaxon/27/NCBITaxon_78427.md) SubClassOf [Uroteuthis](../../NCBITaxon/19/NCBITaxon_55719.md)
 
 ## External Comments
 

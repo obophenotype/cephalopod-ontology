@@ -26,9 +26,13 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_family
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Vitreledonellidae
 
 ## Usage
 
+ * -
+ * [Vitreledonella](../../NCBITaxon/53/NCBITaxon_61753.md) SubClassOf [Vitreledonellidae](../../NCBITaxon/52/NCBITaxon_61752.md)
+ * [Vitreledonellidae](../../NCBITaxon/52/NCBITaxon_61752.md) SubClassOf [Incirrata](../../NCBITaxon/46/NCBITaxon_6646.md)
 
 ## External Comments
 

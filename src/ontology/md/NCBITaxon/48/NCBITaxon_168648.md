@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Haliphron atlanticus
 
 ## Usage
 
+ * -
+ * [Haliphron atlanticus](../../NCBITaxon/48/NCBITaxon_168648.md) SubClassOf [Haliphron](../../NCBITaxon/47/NCBITaxon_168647.md)
 
 ## External Comments
 

@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Octopus ocellate sp. A-MG-2004
 
 ## Usage
 
+ * -
+ * [Octopus ocellate sp. A-MG-2004](../../NCBITaxon/70/NCBITaxon_264570.md) SubClassOf [Octopus](../../NCBITaxon/43/NCBITaxon_6643.md)
 
 ## External Comments
 

@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Pareledone sp. 2 DS-2009
 
 ## Usage
 
+ * -
+ * [Pareledone sp. 2 DS-2009](../../NCBITaxon/00/NCBITaxon_698500.md) SubClassOf [Pareledone](../../NCBITaxon/43/NCBITaxon_158843.md)
 
 ## External Comments
 

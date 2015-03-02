@@ -29,9 +29,15 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[has_exact_synonym](../../ym/oboInOwl#hasExactSynonym.md)* = longfin inshore squid
+ * *[has_related_synonym](../../ym/oboInOwl#hasRelatedSynonym.md)* = Loligo pealeii
+ * *[has_related_synonym](../../ym/oboInOwl#hasRelatedSynonym.md)* = Loligo pealii
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Loligo pealei
 
 ## Usage
 
+ * -
+ * [Loligo pealei](../../NCBITaxon/21/NCBITaxon_6621.md) SubClassOf [Loligo](../../NCBITaxon/16/NCBITaxon_6616.md)
 
 ## External Comments
 

@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Sepia pardex
 
 ## Usage
 
+ * -
+ * [Sepia pardex](../../NCBITaxon/13/NCBITaxon_299313.md) SubClassOf [Sepia](../../NCBITaxon/09/NCBITaxon_6609.md)
 
 ## External Comments
 

@@ -25,9 +25,13 @@
 
 ## Other Annotations
 
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Protostomia
 
 ## Usage
 
+ * -
+ * [Mollusca](../../NCBITaxon/47/NCBITaxon_6447.md) SubClassOf [Protostomia](../../NCBITaxon/17/NCBITaxon_33317.md)
+ * [Protostomia](../../NCBITaxon/17/NCBITaxon_33317.md) SubClassOf [Coelomata](../../NCBITaxon/16/NCBITaxon_33316.md)
 
 ## External Comments
 

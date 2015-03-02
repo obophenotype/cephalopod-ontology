@@ -27,9 +27,13 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[has_exact_synonym](../../ym/oboInOwl#hasExactSynonym.md)* = northern European squid
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Loligo forbesi
 
 ## Usage
 
+ * -
+ * [Loligo forbesi](../../NCBITaxon/18/NCBITaxon_6618.md) SubClassOf [Loligo](../../NCBITaxon/16/NCBITaxon_6616.md)
 
 ## External Comments
 

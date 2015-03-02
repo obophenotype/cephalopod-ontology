@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Amphioctopus arenicola
 
 ## Usage
 
+ * -
+ * [Amphioctopus arenicola](../../NCBITaxon/44/NCBITaxon_703444.md) SubClassOf [Amphioctopus](../../NCBITaxon/95/NCBITaxon_505395.md)
 
 ## External Comments
 

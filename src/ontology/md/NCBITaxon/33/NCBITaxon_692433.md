@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Bathyteuthis sp. RJ-2009
 
 ## Usage
 
+ * -
+ * [Bathyteuthis sp. RJ-2009](../../NCBITaxon/33/NCBITaxon_692433.md) SubClassOf [Bathyteuthis](../../NCBITaxon/92/NCBITaxon_61692.md)
 
 ## External Comments
 

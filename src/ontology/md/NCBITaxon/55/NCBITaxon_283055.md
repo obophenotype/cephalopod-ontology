@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Histioteuthis corona
 
 ## Usage
 
+ * -
+ * [Histioteuthis corona](../../NCBITaxon/55/NCBITaxon_283055.md) SubClassOf [Histioteuthis](../../NCBITaxon/58/NCBITaxon_34558.md)
 
 ## External Comments
 

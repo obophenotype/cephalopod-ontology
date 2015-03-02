@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Liocranchia valdiviae
 
 ## Usage
 
+ * -
+ * [Liocranchia valdiviae](../../NCBITaxon/64/NCBITaxon_34564.md) SubClassOf [Liocranchia](../../NCBITaxon/63/NCBITaxon_34563.md)
 
 ## External Comments
 

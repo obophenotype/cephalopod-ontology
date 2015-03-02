@@ -27,9 +27,13 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[has_related_synonym](../../ym/oboInOwl#hasRelatedSynonym.md)* = Loligo reynaudi
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Loligo reynaudii
 
 ## Usage
 
+ * -
+ * [Loligo reynaudii](../../NCBITaxon/83/NCBITaxon_55283.md) SubClassOf [Loligo](../../NCBITaxon/16/NCBITaxon_6616.md)
 
 ## External Comments
 

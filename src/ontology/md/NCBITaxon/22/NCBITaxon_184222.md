@@ -25,9 +25,13 @@
 
 ## Other Annotations
 
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = unclassified Illex
 
 ## Usage
 
+ * -
+ * [Illex sp. AL9407-Illex-2K](../../NCBITaxon/23/NCBITaxon_184223.md) SubClassOf [unclassified Illex](../../NCBITaxon/22/NCBITaxon_184222.md)
+ * [unclassified Illex](../../NCBITaxon/22/NCBITaxon_184222.md) SubClassOf [Illex](../../NCBITaxon/27/NCBITaxon_6627.md)
 
 ## External Comments
 

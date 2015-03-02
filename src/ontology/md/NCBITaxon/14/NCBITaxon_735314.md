@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Decapodiformes sp. BOLD:BIN45276
 
 ## Usage
 
+ * -
+ * [Decapodiformes sp. BOLD:BIN45276](../../NCBITaxon/14/NCBITaxon_735314.md) SubClassOf [unclassified Decapodiformes](../../NCBITaxon/01/NCBITaxon_725201.md)
 
 ## External Comments
 

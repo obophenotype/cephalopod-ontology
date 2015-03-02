@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Thaumeledone sp. CYV-2001
 
 ## Usage
 
+ * -
+ * [Thaumeledone sp. CYV-2001](../../NCBITaxon/51/NCBITaxon_168651.md) SubClassOf [Thaumeledone](../../NCBITaxon/47/NCBITaxon_164547.md)
 
 ## External Comments
 

@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Asperoteuthis nesisi
 
 ## Usage
 
+ * -
+ * [Asperoteuthis nesisi](../../NCBITaxon/69/NCBITaxon_502369.md) SubClassOf [Asperoteuthis](../../NCBITaxon/68/NCBITaxon_502368.md)
 
 ## External Comments
 

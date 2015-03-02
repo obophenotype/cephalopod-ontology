@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Pareledone pryzdensis
 
 ## Usage
 
+ * -
+ * [Pareledone pryzdensis](../../NCBITaxon/33/NCBITaxon_672933.md) SubClassOf [Pareledone](../../NCBITaxon/43/NCBITaxon_158843.md)
 
 ## External Comments
 

@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Architeuthis sp. BED-2003
 
 ## Usage
 
+ * -
+ * [Architeuthis sp. BED-2003](../../NCBITaxon/66/NCBITaxon_248766.md) SubClassOf [Architeuthis](../../NCBITaxon/55/NCBITaxon_34555.md)
 
 ## External Comments
 

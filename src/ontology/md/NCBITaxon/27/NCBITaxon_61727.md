@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Onychoteuthis compacta
 
 ## Usage
 
+ * -
+ * [Onychoteuthis compacta](../../NCBITaxon/27/NCBITaxon_61727.md) SubClassOf [Onychoteuthis](../../NCBITaxon/26/NCBITaxon_61726.md)
 
 ## External Comments
 

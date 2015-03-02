@@ -28,9 +28,14 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[has_exact_synonym](../../ym/oboInOwl#hasExactSynonym.md)* = musky octopus
+ * *[has_related_synonym](../../ym/oboInOwl#hasRelatedSynonym.md)* = Ozaena moschata
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Eledone moschata
 
 ## Usage
 
+ * -
+ * [Eledone moschata](../../NCBITaxon/41/NCBITaxon_6641.md) SubClassOf [Eledone](../../NCBITaxon/39/NCBITaxon_6639.md)
 
 ## External Comments
 

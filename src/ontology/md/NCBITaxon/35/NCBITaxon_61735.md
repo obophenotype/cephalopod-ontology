@@ -26,9 +26,13 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_family
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Pholidoteuthidae
 
 ## Usage
 
+ * -
+ * [Pholidoteuthidae](../../NCBITaxon/35/NCBITaxon_61735.md) SubClassOf [Oegopsina](../../NCBITaxon/42/NCBITaxon_34542.md)
+ * [Pholidoteuthis](../../NCBITaxon/36/NCBITaxon_61736.md) SubClassOf [Pholidoteuthidae](../../NCBITaxon/35/NCBITaxon_61735.md)
 
 ## External Comments
 

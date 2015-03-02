@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Moroteuthis sp.
 
 ## Usage
 
+ * -
+ * [Moroteuthis sp.](../../NCBITaxon/67/NCBITaxon_34567.md) SubClassOf [Moroteuthis](../../NCBITaxon/66/NCBITaxon_34566.md)
 
 ## External Comments
 

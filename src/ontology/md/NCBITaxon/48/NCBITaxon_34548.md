@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Abraliopsis sp.
 
 ## Usage
 
+ * -
+ * [Abraliopsis sp.](../../NCBITaxon/48/NCBITaxon_34548.md) SubClassOf [Abraliopsis](../../NCBITaxon/47/NCBITaxon_34547.md)
 
 ## External Comments
 

@@ -26,9 +26,12 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Neorossia caroli
 
 ## Usage
 
+ * -
+ * [Neorossia caroli](../../NCBITaxon/53/NCBITaxon_411453.md) SubClassOf [Neorossia](../../NCBITaxon/52/NCBITaxon_411452.md)
 
 ## External Comments
 

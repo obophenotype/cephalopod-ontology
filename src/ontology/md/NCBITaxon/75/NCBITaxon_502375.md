@@ -27,9 +27,13 @@
 ## Other Annotations
 
  * *[ceph-tax#has_rank](../../ceph-tax#has/nk/ceph-tax#has_rank.md)* = http://purl.obolibrary.org/obo/NCBITaxon_species
+ * *[has_related_synonym](../../ym/oboInOwl#hasRelatedSynonym.md)* = Asperoteuthis mangoldae Young, Vecchione and Roper, 2007
+ * *[rdf-schema#label](../../el/rdf-schema#label.md)* = Asperoteuthis mangoldae
 
 ## Usage
 
+ * -
+ * [Asperoteuthis mangoldae](../../NCBITaxon/75/NCBITaxon_502375.md) SubClassOf [Asperoteuthis](../../NCBITaxon/68/NCBITaxon_502368.md)
 
 ## External Comments
 
