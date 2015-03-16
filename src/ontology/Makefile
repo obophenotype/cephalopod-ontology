@@ -1,5 +1,6 @@
 OBO=http://purl.obolibrary.org/obo
 USECAT= --catalog-xml catalog-v001.xml
+RELEASE = $(OBO)/ceph/releases/`date +%Y-%m-%d`
 
 # This Makefile is for use by the CEPH Release Manager.
 #
@@ -11,7 +12,7 @@ build: ceph.obo minidiff
 release: ceph.obo diff
 
 ceph.owl: ceph-edit.owl
-	owltools --use-catalog $< --run-reasoner -r elk --assert-implied -o $@
+	owltools --use-catalog $< --run-reasoner -r elk --assert-implied --set-ontology-id -v $(RELEASE)/$@ $(OBO)/$@ -o $@
 #	owltools --use-catalog $< --remove-axioms --assert-inferred-subclass-axioms -o $@
 
 ceph.obo: ceph.owl
