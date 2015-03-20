@@ -73,3 +73,6 @@ core.owl: ceph.owl
 markdown: ceph.owl
 	owltools $< --merge-imports-closure --ontology-to-markdown md && git add md/*/*/*.md
 
+
+edit:
+	owljs -i ceph-cfg.js ceph-edit.owl
