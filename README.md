@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/obophenotype/cephalopod-ontology.svg?branch=master)](https://travis-ci.org/obophenotype/cephalopod-ontology)
+[![DOI](https://zenodo.org/badge/13996/obophenotype/cephalopod-ontology.svg)](https://zenodo.org/badge/latestdoi/13996/obophenotype/cephalopod-ontology)
+
 # cephalopod-ontology
 
 ```
