@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ceph/taxonomy.owl" uri="taxonomy.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ceph/imports/ro_import.owl" uri="imports/ro_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ceph/imports/cl_import.owl" uri="imports/cl_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ceph/imports/go_import.owl" uri="imports/go_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ceph/imports/uberon_import.owl" uri="imports/uberon_import.owl"/>
+</catalog>
