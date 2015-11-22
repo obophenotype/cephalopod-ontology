@@ -11,6 +11,8 @@ RELEASE = $(OBO)/ceph/releases/`date +%Y-%m-%d`
 build: ceph.obo minidiff
 release: ceph.obo diff
 
+test: ceph.obo
+
 ceph.owl: ceph-edit.owl
 	owltools --use-catalog $< --run-reasoner -r elk --assert-implied --set-ontology-id -v $(RELEASE)/$@ $(OBO)/$@ -o $@
 #	owltools --use-catalog $< --remove-axioms --assert-inferred-subclass-axioms -o $@
