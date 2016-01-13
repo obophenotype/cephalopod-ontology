@@ -20,7 +20,7 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ceph/imports/go_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ceph/imports/ro_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ceph/imports/uberon_import.owl"/>
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/ceph/releases/2015-03-15/ceph.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/ceph/releases/2016-01-12/ceph.owl"/>
     </owl:Ontology>
     
 
@@ -421,6 +421,22 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CEPH_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEPH_0000001">
+        <rdfs:label>accessory nidamental gland</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000175"/>
+        <obo:IAO_0000115>The basic structural unit is a tubule composed of a single layer of epithelial cells containing ordered arrays of rough endoplasmic reticulum and a lumenal surface covered with microvilli, cilia, and structural specialization presumed to be involved in secretion.</obo:IAO_0000115>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget>The basic structural unit is a tubule composed of a single layer of epithelial cells containing ordered arrays of rough endoplasmic reticulum and a lumenal surface covered with microvilli, cilia, and structural specialization presumed to be involved in secretion.</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000001"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <oboInOwl:hasDbXref rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/906013"/>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CEPH_0000002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEPH_0000002">
@@ -433,6 +449,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CEPH_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEPH_0000003">
+        <rdfs:label>circumoral appendage bud</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005423"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CEPH_0000004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEPH_0000004">
@@ -441,14 +466,14 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005399"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000063"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002160"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_61743"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002160"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_61743"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000063"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The glandular complex in cirrates that forms sperm packets and is a counterpart of the spermatophore-forming complex of other cephalopods. </obo:IAO_0000115>
@@ -491,6 +516,15 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000006"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CEPH_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEPH_0000007">
+        <rdfs:label>main nidamental gland</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000175"/>
+    </owl:Class>
     
 
 
@@ -790,14 +824,14 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000293"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ceph#ventral_to"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001043"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000296"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000296"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ceph#ventral_to"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001043"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The anterior-most part of the brain located ventral to the esophagus. The large axial nerve cords that run down the centers of the arms connect to this lobe. In octopods this lobe is fused with the rest of the subesophageal mass while in decapodiforms and &lt;strong&gt;Vampyroteuthis&lt;/strong&gt; it is separate from the remaining brain.</obo:IAO_0000115>
@@ -862,16 +896,16 @@
         <ceph:external_definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photophore at base of gill[http://tolweb.org/accessory/Cephalopod_Photophore_Terminology?acc_id=2015]l</ceph:external_definition>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Photophores located on the arms.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000033"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://tolweb.org/accessory/Cephalopod_Photophore_Terminology?acc_id=2015</oboInOwl:source>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photophore at base of gill[http://tolweb.org/accessory/Cephalopod_Photophore_Terminology?acc_id=2015]l</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000033"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ceph#external_definition"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Photophores located on the arms.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000033"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
     </owl:Axiom>
     
 
@@ -1006,7 +1040,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000033"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1018,7 +1052,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000038"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000033"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The muscular membrane that connects the buccal supports and together with the supports, forms the buccal crown. The pigmentation of the buccal membrane often differs from that of the adjacent oral surfaces of the arms.</obo:IAO_0000115>
@@ -1140,14 +1174,14 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0014403"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000098"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000248"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000248"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000098"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The conical papilla of the end-organ of the hectocotylus in many incirrate octopods. It is located at the distal termination of the sperm groove and usually lies adjacent to the last arm sucker.</obo:IAO_0000115>
@@ -1541,14 +1575,14 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ceph#continuous_with"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000072"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000124"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000124"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ceph#continuous_with"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000072"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lateral portions of the gladius that are continuous posteriorly with the primary conus or its remnant and laterally with the edges of the vanes.</obo:IAO_0000115>
@@ -1630,14 +1664,14 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ceph#continuous_with"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001043"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001555"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001555"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ceph#continuous_with"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001043"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Expansion (i.e. a broading or a side pocket) of the esophagus for storing food. Present in &lt;strong&gt;Nautilus&lt;/strong&gt; and most octopodiforms.</obo:IAO_0000115>
@@ -1848,14 +1882,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ceph#continuous_with"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000087"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006799"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006799"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ceph#continuous_with"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000087"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Outpockets of the ducts leading from the digestive gland that are covered with glandular epithelium.</obo:IAO_0000115>
@@ -2314,14 +2348,14 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000025"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ceph#continuous_with"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006580"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001630"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001630"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ceph#continuous_with"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006580"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The ventral, muscular tube through which water is expelled from the mantle cavity. The funnel is thought to have evolved from the molluscan foot.</obo:IAO_0000115>
@@ -2509,14 +2543,14 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000475"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000059"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CEPH_0001007"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006612"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CEPH_0001007"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006612"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The chitinous remnant of the shell in many decapodiforms and &lt;strong&gt;Vampyroteuthis&lt;/strong&gt;. It is generally feather-shaped and lies in the dorsal mid-line of the body along the full length of the mantle. The gladius lies within the shell sac which secretes it.</obo:IAO_0000115>
@@ -2589,13 +2623,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ceph#trait_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000033"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006575"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ceph#trait_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006575"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000033"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.</obo:IAO_0000115>
@@ -2692,14 +2726,14 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000059"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000308"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000308"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Horny structure that looks like a single claw and is derived from the inner sucker ring in some decapodiforms. Hooks may be found on the arms and/or tentacular clubs of squid. The relative advantage of hooks vs toothed rings is uncertain.</obo:IAO_0000115>
@@ -3222,14 +3256,14 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0014403"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000079"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000237"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000237"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000079"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In males, the large storage sac for spermatophores that is an expanded region of the genital duct at the base of the penis.</obo:IAO_0000115>
@@ -3278,10 +3312,11 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006580"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Large glandular structures found in decapodiforms and &lt;strong&gt;Nautilus&lt;/strong&gt; that lie in and open directly into the mantle cavity. The glands are composed of numerous lamellae that are involved in secretion of egg cases or the jelly of egg masses.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Large glandular structures found in decapodiforms and Nautilus that lie in and open directly into the mantle cavity. The glands are composed of numerous lamellae that are involved in secretion of egg cases or the jelly of egg masses.</obo:IAO_0000115>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Nidamental_gland"/>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Large glandular structures found in decapodiforms and &lt;strong&gt;Nautilus&lt;/strong&gt; that lie in and open directly into the mantle cavity. The glands are composed of numerous lamellae that are involved in secretion of egg cases or the jelly of egg masses.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Large glandular structures found in decapodiforms and Nautilus that lie in and open directly into the mantle cavity. The glands are composed of numerous lamellae that are involved in secretion of egg cases or the jelly of egg masses.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000175"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -3576,6 +3611,12 @@
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">terminal organ</oboInOwl:hasBroadSynonym>
     </owl:Class>
     <owl:Axiom>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia</oboInOwl:source>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000196"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008811"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The long, muscular end of the male gonoduct that assists in transfering spermatophores to the female. Apparently, in species with a hectocotylus, the penis transfers spermatophores to the hectocotylus which in turn transfers them to the female. In species without a hectocotylus, the penis is often greatly elongate, capable of extending beyond the mantle cavity and can, apparently, transfer spermatophores directly to the female.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000196"/>
@@ -3587,12 +3628,6 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000196"/>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ceph#octopoda"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia</oboInOwl:source>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000196"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008811"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
     </owl:Axiom>
     
 
@@ -3776,16 +3811,16 @@
         <obo:IAO_0000115>A thin fold of integument along lateral angles of oral surface of arms and clubs lateral to suckers usually supported by trabeculae</obo:IAO_0000115>
     </owl:Class>
     <owl:Axiom>
-        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.sil.si.edu/smithsoniancontributions/zoology/pdf_hi/sctz-0513.pdf</dc:source>
-        <owl:annotatedTarget>A thin fold of integument along lateral angles of oral surface of arms and clubs lateral to suckers usually supported by trabeculae</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000208"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Membranes, generally supported by trabeculae, that form lateral borders along the oral surfaces of the arms and tentacular clubs in decapodiforms.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000208"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.sil.si.edu/smithsoniancontributions/zoology/pdf_hi/sctz-0513.pdf</dc:source>
+        <owl:annotatedTarget>A thin fold of integument along lateral angles of oral surface of arms and clubs lateral to suckers usually supported by trabeculae</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000208"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
     </owl:Axiom>
     
 
@@ -4318,14 +4353,14 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000307"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000256"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ceph#proximal_to"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000291"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ceph#proximal_to"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000291"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000256"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Region of the tentacle proximal to the club.</obo:IAO_0000115>
@@ -4625,10 +4660,11 @@
         <obo:IAO_0000115>Elongate 4th circumoral appendage of cuttlefish and squids used to capture prey. Divided into proximal stalk and distal club.</obo:IAO_0000115>
     </owl:Class>
     <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Modified 4th pair of appendages in decapodiforms that are capable of considerable extension and contraction. Although the tentacles are derived evolutionarily from the 4th pair of arms, the term, &quot;arms IV&quot;; is reserved for the subsequent arm pair, the ventral arms, which are evolutionarily the 5th pair of arms. Each tentacle consist of a proximal stalk usually devoid of suckers, and a distal club armed with suckers and occasionally hooks.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Cephalopod_limb</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arm</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://tolweb.org/accessory/Composite_Squid?acc_id=1936</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000256"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Cephalopod_limb</oboInOwl:hasDbXref>
@@ -4643,11 +4679,10 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Modified 4th pair of appendages in decapodiforms that are capable of considerable extension and contraction. Although the tentacles are derived evolutionarily from the 4th pair of arms, the term, &quot;arms IV&quot;; is reserved for the subsequent arm pair, the ventral arms, which are evolutionarily the 5th pair of arms. Each tentacle consist of a proximal stalk usually devoid of suckers, and a distal club armed with suckers and occasionally hooks.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Cephalopod_limb</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://tolweb.org/accessory/Composite_Squid?acc_id=1936</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arm</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000256"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     </owl:Axiom>
     
 
@@ -4872,14 +4907,14 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000216"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000124"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000124"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000216"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Broad, lateral portions of the gladius that arise from the rhachis.</obo:IAO_0000115>
@@ -4951,14 +4986,14 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001007"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000046"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000046"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A concentration of digestive organs that sometimes includes reproductive organs as well. In cranchiid squids the visceral nucleus is especially distinct: the small, spindle-shaped digestive gland contains the ink sac and is adjacent to the stomach and caecum and associated structures (eg, digestive gland duct appendages, renal appendages). In most cephalopods the concentration of these structures is not so extensive but whenever a concentration exists, a visceral nucleus is present.</obo:IAO_0000115>
@@ -4966,16 +5001,16 @@
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">visceral hump</oboInOwl:hasExactSynonym>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0001448</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">visceral hump</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000276"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A concentration of digestive organs that sometimes includes reproductive organs as well. In cranchiid squids the visceral nucleus is especially distinct: the small, spindle-shaped digestive gland contains the ink sac and is adjacent to the stomach and caecum and associated structures (eg, digestive gland duct appendages, renal appendages). In most cephalopods the concentration of these structures is not so extensive but whenever a concentration exists, a visceral nucleus is present.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000276"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0001448</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">visceral hump</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000276"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
     </owl:Axiom>
     
 
@@ -5262,13 +5297,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ceph#continuous_with"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000187"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000970"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ceph#continuous_with"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000970"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000187"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Large nerve bundles that run from the optic lobe to the eye.</obo:IAO_0000115>
@@ -5513,6 +5548,12 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CEPH_0000308">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circumoral appendage</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000026"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasRelatedSynonym>arm crown</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>head appendage</oboInOwl:hasRelatedSynonym>
         <obo:IAO_0000115>Any of the numerous arms or tentacles that arise from the head and surround the mouth of a cephalopod</obo:IAO_0000115>
@@ -5598,14 +5639,14 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000477"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000468"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000061"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000061"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000468"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Collection of chromatophores that produces species-specific patterns in discrete regions</obo:IAO_0000115>
@@ -5667,8 +5708,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000475"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CEPH_0001007"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000072"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006612"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -5679,13 +5720,19 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006612"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CEPH_0001007"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000072"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>found in fossil teuthoids</rdfs:comment>
         <obo:IAO_0000115>The phragmocone is the chambered portion of the shell of a cephalopod. It is divided by septa into camerae.</obo:IAO_0000115>
     </owl:Class>
+    <owl:Axiom>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://en.wikipedia.org/wiki/Phragmocone</dc:source>
+        <owl:annotatedTarget>The phragmocone is the chambered portion of the shell of a cephalopod. It is divided by septa into camerae.</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CEPH_0001008"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
     <owl:Axiom>
         <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.sil.si.edu/smithsoniancontributions/zoology/pdf_hi/sctz-0513.pdf</dc:source>
         <owl:annotatedTarget>found in fossil teuthoids</owl:annotatedTarget>
@@ -5702,12 +5749,6 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000072"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://en.wikipedia.org/wiki/Phragmocone</dc:source>
-        <owl:annotatedTarget>The phragmocone is the chambered portion of the shell of a cephalopod. It is divided by septa into camerae.</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CEPH_0001008"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
     </owl:Axiom>
     
 
@@ -6282,13 +6323,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000118"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000116"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000116"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000118"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -14264,13 +14305,13 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://xmlns.com/foaf/0.1/depicts"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000153"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000130"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://xmlns.com/foaf/0.1/depicts"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000130"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CEPH_0000153"/>
             </owl:Restriction>
         </rdf:type>
     </owl:NamedIndividual>

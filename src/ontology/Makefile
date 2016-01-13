@@ -10,6 +10,8 @@ RELEASE = $(OBO)/ceph/releases/`date +%Y-%m-%d`
 
 build: ceph.obo 
 release: ceph.obo
+	cp catalog-v001.xml ceph.obo ceph.owl ../.. ;\
+	cp imports/* ../../imports
 
 test: ceph.obo
 
