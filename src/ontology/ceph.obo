@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2015-03-15
+data-version: releases/2016-01-12
 synonymtypedef: acronym "acronym" broad
 synonymtypedef: anamorph "anamorph" related
 synonymtypedef: blast_name "blast name" related
@@ -39,12 +39,23 @@ created_by: cjm
 creation_date: 2011-01-30T08:15:10Z
 
 [Term]
+id: CEPH:0000001
+name: accessory nidamental gland
+def: "The basic structural unit is a tubule composed of a single layer of epithelial cells containing ordered arrays of rough endoplasmic reticulum and a lumenal surface covered with microvilli, cilia, and structural specialization presumed to be involved in secretion." [http://www.ncbi.nlm.nih.gov/pubmed/906013]
+is_a: CEPH:0000175 ! nidamental gland
+
+[Term]
 id: CEPH:0000002
 name: cephalopod eye
 comment: todo - reconcile with camera-type eye in uberon
 is_a: UBERON:0000970 ! eye
 created_by: cjm
 creation_date: 2011-01-30T08:21:37Z
+
+[Term]
+id: CEPH:0000003
+name: circumoral appendage bud
+is_a: UBERON:0005423 ! developing anatomical structure
 
 [Term]
 id: CEPH:0000004
@@ -66,6 +77,11 @@ id: CEPH:0000006
 name: adult stage
 def: "A female that has mature eggs (these are frequently stored in the oviducts), or a male that has produced spermatophores (these are stored in Needham's sac)." [http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587]
 is_a: UBERON:0000105 ! life cycle stage
+
+[Term]
+id: CEPH:0000007
+name: main nidamental gland
+is_a: CEPH:0000175 ! nidamental gland
 
 [Term]
 id: CEPH:0000009
@@ -1021,9 +1037,10 @@ relationship: part_of CEPH:0001037 ! renal sac
 [Term]
 id: CEPH:0000175
 name: nidamental gland
-def: "Large glandular structures found in decapodiforms and <strong>Nautilus</strong> that lie in and open directly into the mantle cavity. The glands are composed of numerous lamellae that are involved in secretion of egg cases or the jelly of egg masses." [http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587]
+def: "Large glandular structures found in decapodiforms and Nautilus that lie in and open directly into the mantle cavity. The glands are composed of numerous lamellae that are involved in secretion of egg cases or the jelly of egg masses." [http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587]
 is_a: UBERON:0002530 ! gland
 relationship: RO:0001025 UBERON:0006580 ! located in mantle cavity
+property_value: seeAlso Nidamental:gland
 
 [Term]
 id: CEPH:0000176
@@ -1820,6 +1837,7 @@ def: "Any of the numerous arms or tentacles that arise from the head and surroun
 synonym: "arm crown" RELATED []
 synonym: "head appendage" RELATED []
 is_a: UBERON:0000026 ! appendage
+relationship: RO:0002202 CEPH:0000003 ! develops from circumoral appendage bud
 
 [Term]
 id: CEPH:0000309

@@ -8,8 +8,8 @@ RELEASE = $(OBO)/ceph/releases/`date +%Y-%m-%d`
 #
 # To make a release, type 'make release' in this directory
 
-build: ceph.obo minidiff
-release: ceph.obo diff
+build: ceph.obo 
+release: ceph.obo
 
 test: ceph.obo
 
