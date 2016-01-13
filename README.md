@@ -7,9 +7,15 @@
 <コ:彡 An ontology of cephalopod anatomy and traits Ｃ:。ミ
 ```
 
+This is the GitHub repository for CEPH. The OWL source for the ontology lives here, as well as the tracker.
+
+For general browsing, see some of the options on [The OBO page for CEPH](http://obofoundry.org/ontology/ceph.html).
+
 The ontology is available from
 
   http://purl.obolibrary.org/obo/ceph.owl
+  
+You can use this URL for browsing in Protege, or for using in computational processing (see above for general casual browsing)
 
 You can find the source files in the [src/ontology/](https://github.com/obophenotype/cephalopod-ontology/tree/master/src/ontology) directory.
 
@@ -21,11 +27,7 @@ to this ontology!
 
 Email cjm AT berkeleybop DOT org, or obo-anatomy AT lists.sourceforge.net
 
-## Browse the ontology
 
-Currently, in order to browse the ontology it's necessary to load the
-ontology into an environment such as obo-edit or protege. Web views
-may be available soon.
 
 ### Editor's view
 
