@@ -1,24 +1,24 @@
 format-version: 1.2
 data-version: releases/2016-01-12
-synonymtypedef: acronym "acronym" broad
-synonymtypedef: anamorph "anamorph" related
-synonymtypedef: blast_name "blast name" related
-synonymtypedef: common_name "common name" exact
-synonymtypedef: equivalent_name "equivalent name" exact
-synonymtypedef: genbank_acronym "genbank acronym" broad
-synonymtypedef: genbank_anamorph "genbank anamorph" related
-synonymtypedef: genbank_common_name "genbank common name" exact
-synonymtypedef: genbank_synonym "genbank synonym" related
-synonymtypedef: in_part "in-part" related
-synonymtypedef: misnomer "misnomer" related
-synonymtypedef: misspelling "misspelling" related
+synonymtypedef: acronym "acronym" BROAD
+synonymtypedef: anamorph "anamorph" RELATED
+synonymtypedef: blast_name "blast name" RELATED
+synonymtypedef: common_name "common name" EXACT
+synonymtypedef: equivalent_name "equivalent name" EXACT
+synonymtypedef: genbank_acronym "genbank acronym" BROAD
+synonymtypedef: genbank_anamorph "genbank anamorph" RELATED
+synonymtypedef: genbank_common_name "genbank common name" EXACT
+synonymtypedef: genbank_synonym "genbank synonym" RELATED
+synonymtypedef: in_part "in-part" RELATED
+synonymtypedef: misnomer "misnomer" RELATED
+synonymtypedef: misspelling "misspelling" RELATED
 synonymtypedef: octopoda "term used in octopoda"
 synonymtypedef: PLURAL "plural term"
-synonymtypedef: scientific_name "scientific name" exact
+synonymtypedef: scientific_name "scientific name" EXACT
 synonymtypedef: SENSU "taxonomic disambiguation"
 synonymtypedef: squid "term used in squid"
-synonymtypedef: synonym "synonym" related
-synonymtypedef: teleomorph "teleomorph" related
+synonymtypedef: synonym "synonym" RELATED
+synonymtypedef: teleomorph "teleomorph" RELATED
 default-namespace: ceph
 remark: Includes Ontology(OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/ceph/imports/imports/cl_import.owl>))) [Axioms: 27 Logical Axioms: 6]
 remark: Includes Ontology(OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/ceph/imports/imports/go_import.owl>))) [Axioms: 100 Logical Axioms: 29]
