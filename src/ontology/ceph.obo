@@ -1,24 +1,24 @@
 format-version: 1.2
 data-version: releases/2016-01-12
-synonymtypedef: acronym "acronym" broad
-synonymtypedef: anamorph "anamorph" related
-synonymtypedef: blast_name "blast name" related
-synonymtypedef: common_name "common name" exact
-synonymtypedef: equivalent_name "equivalent name" exact
-synonymtypedef: genbank_acronym "genbank acronym" broad
-synonymtypedef: genbank_anamorph "genbank anamorph" related
-synonymtypedef: genbank_common_name "genbank common name" exact
-synonymtypedef: genbank_synonym "genbank synonym" related
-synonymtypedef: in_part "in-part" related
-synonymtypedef: misnomer "misnomer" related
-synonymtypedef: misspelling "misspelling" related
+synonymtypedef: acronym "acronym" BROAD
+synonymtypedef: anamorph "anamorph" RELATED
+synonymtypedef: blast_name "blast name" RELATED
+synonymtypedef: common_name "common name" EXACT
+synonymtypedef: equivalent_name "equivalent name" EXACT
+synonymtypedef: genbank_acronym "genbank acronym" BROAD
+synonymtypedef: genbank_anamorph "genbank anamorph" RELATED
+synonymtypedef: genbank_common_name "genbank common name" EXACT
+synonymtypedef: genbank_synonym "genbank synonym" RELATED
+synonymtypedef: in_part "in-part" RELATED
+synonymtypedef: misnomer "misnomer" RELATED
+synonymtypedef: misspelling "misspelling" RELATED
 synonymtypedef: octopoda "term used in octopoda"
 synonymtypedef: PLURAL "plural term"
-synonymtypedef: scientific_name "scientific name" exact
+synonymtypedef: scientific_name "scientific name" EXACT
 synonymtypedef: SENSU "taxonomic disambiguation"
 synonymtypedef: squid "term used in squid"
-synonymtypedef: synonym "synonym" related
-synonymtypedef: teleomorph "teleomorph" related
+synonymtypedef: synonym "synonym" RELATED
+synonymtypedef: teleomorph "teleomorph" RELATED
 default-namespace: ceph
 remark: Includes Ontology(OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/ceph/imports/imports/cl_import.owl>))) [Axioms: 27 Logical Axioms: 6]
 remark: Includes Ontology(OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/ceph/imports/imports/go_import.owl>))) [Axioms: 100 Logical Axioms: 29]
@@ -12314,7 +12314,6 @@ inverse_of: RO:0002202 ! develops from
 [Typedef]
 id: RO:0002215
 name: capable of
-name: capable_of
 def: "A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. " []
 property_value: IAO:0000112 "mechanosensory neuron capable of detection of mechanical stimulus involved in sensory perception (GO:0050974)" xsd:string
 property_value: IAO:0000112 "osteoclast SubClassOf 'capable of' some 'bone resorption'" xsd:string
@@ -12434,7 +12433,6 @@ name: depicts
 [Typedef]
 id: part_of
 name: part of
-name: part_of
 xref: BFO:0000050
 property_value: http://purl.org/dc/elements/1.1/source http://www.obofoundry.org/ro/#OBO_REL:part_of xsd:string
 property_value: IAO:0000111 "is part of" xsd:string
